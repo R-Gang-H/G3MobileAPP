@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/water_valve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/unknown"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/water_valve"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/erelay2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/medium_text_size"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sn:"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="@dimen/small_text_size"/>
+
+                <TextView
+                    android:id="@+id/erelay2_ieee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="@dimen/small_text_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态 : "
+                    android:textColor="@color/black"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/tv_erelay_two_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 百分比 -->
+
+        <LinearLayout
+            android:id="@+id/erelay2_progress_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="当前进度:"
+                    android:textColor="@drawable/realy_selector_text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/current_progress_numeral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@drawable/realy_selector_text"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" %"
+                    android:textColor="@drawable/realy_selector_text"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/percentage_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="10dp"
+                android:layout_marginBottom="5dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_color"
+                android:secondaryProgress="0"/>
+        </LinearLayout>
+
+        <!-- 电气柜布局 -->
+
+        <LinearLayout
+            android:id="@+id/elelay_box_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/elelay_box"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rectangular"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="控制"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ventilation_warm_control_lay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/erelay2_progress_lay"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ventilation_controls_warm"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/spinners"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="温控策略"
+                android:textColor="@drawable/realy_selector_text"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/erelay2_autostatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/ventilation_controls_warm"
+                android:text="自控"
+                android:textSize="13sp"/>
+
+            <ToggleButton
+                android:id="@+id/erelay2_is_control"
+                android:layout_width="48dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/erelay2_autostatus"
+                android:background="@drawable/button_close"
+                android:textOff=""
+                android:textOn=""/>
+
+            <TextView
+                android:id="@+id/erelay2_handstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/erelay2_is_control"
+                android:text="手控"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+        <!-- 控制布局 -->
+
+        <LinearLayout
+
+            android:id="@+id/ventilation_control_button_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ventilation_warm_control_lay"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/erelay2_forward"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/forward1_foucs"
+                android:gravity="center"
+                android:text="上行"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/erelay2_stop"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/forward2_focus"
+                android:gravity="center"
+                android:text="停止"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/erelay2_back"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/forward3_focus"
+                android:gravity="center"
+                android:text="下行"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shed_bg"/>
+
+</LinearLayout>

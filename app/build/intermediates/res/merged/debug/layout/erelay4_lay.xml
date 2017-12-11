@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/iw_camera_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="双控制器"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:background="@color/white"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/water_valve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/shutter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/water_valve"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/erelay_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/medium_text_size" />
+
+            <Spinner
+                android:id="@+id/component_spinner"
+                android:layout_width="115dp"
+                android:layout_height="30dp"
+                android:background="@drawable/spinner"
+                android:paddingLeft="5dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sn:"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/erelay_ieee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态 : "
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tvRelayTwoStatu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 放风机控制按钮布局 -->
+
+        <LinearLayout
+            android:id="@+id/ventilationControlLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/ventilationControl"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:background="@drawable/spinners"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <!-- 电气柜布局 -->
+
+        <LinearLayout
+            android:id="@+id/electricboxLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/electricbox"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rectangular"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="控制"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!-- 其他设备控制布局 -->
+
+        <LinearLayout
+            android:id="@+id/ventilationOtherControlLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/erelayTwo_Forward_Framelayout"
+                android:layout_width="50dp"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/erelay_forward"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/forward1_foucs"
+                    android:gravity="center"
+                    android:text="上行"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressLayout1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:indeterminateOnly="true"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/erelayTwo_Stop_Framelayout"
+                android:layout_width="50dp"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/erelay_stop"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/forward2_focus"
+                    android:gravity="center"
+                    android:text="停止"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressLayout2"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:indeterminateOnly="true"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/erelayTwo_Back_Framelayout"
+                android:layout_width="50dp"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/erelay_back"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/forward3_focus"
+                    android:gravity="center"
+                    android:text="下行"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressLayout3"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:indeterminateOnly="true"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/current_progress_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ventilationControlLayout"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="当前进度:"
+                    android:textColor="@drawable/realy_selector_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/current_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@drawable/realy_selector_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" %"
+                    android:textColor="@drawable/realy_selector_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBarCurrenTprogress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="10dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_color"
+                android:secondaryProgress="0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 控制布局 -->
+
+    <RelativeLayout
+        android:id="@+id/ventilation_controlbuttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ventilation_controls_warm"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/spinners"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="温控策略"
+            android:textColor="@drawable/realy_selector_text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/ventialtion_handstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/ventilation_controls_warm"
+            android:text="模式"
+            android:textSize="13sp" />
+
+        <ToggleButton
+            android:id="@+id/ventilation_handopen"
+            android:layout_width="48dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/ventialtion_handstatus"
+            android:background="@drawable/button_close"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/ventialtion_temstatuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/ventilation_handopen"
+            android:text="模式:"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ventilation_tvstras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ventialtion_temstatuss"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/ventialtion_temstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/ventilation_handopen"
+            android:text="温度控制"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <ToggleButton
+            android:id="@+id/ventilation_temopen"
+            android:layout_width="48dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/ventialtion_temstatus"
+            android:background="@drawable/button_close"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="gone" />
+
+        <!--
+             <TextView
+                android:id="@+id/ventialtion_onekeystatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ventilation_temopen"
+                android:text="一键打开"
+                android:textSize="13sp" /> 
+		    <ToggleButton
+                android:id="@+id/ventilation_onekeyopen"
+                android:layout_width="48dp"
+                android:layout_height="28dp"
+                android:layout_toRightOf="@id/ventialtion_onekeystatus"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/button_close"
+                 /> -->
+
+    </RelativeLayout>
+    <!-- 一代放风机 -->
+
+    <LinearLayout
+        android:id="@+id/ventilationControlLayoutOne"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/ventilation_Forward_FramelayoutOne"
+            android:layout_width="50dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/ventilationForwardOne"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/forward1_foucs"
+                android:gravity="center"
+                android:text="上行"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:id="@+id/ventilationProgressLayout1One"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateOnly="true"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ventilation_Stop_FramelayoutOne"
+            android:layout_width="50dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/ventilationStopOne"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/forward2_focus"
+                android:gravity="center"
+                android:text="停止"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:id="@+id/ventilationProgressLayout2One"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateOnly="true"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ventilation_Back_FramelayoutOne"
+            android:layout_width="50dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/ventilationBackOne"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/forward3_focus"
+                android:gravity="center"
+                android:text="下行"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:id="@+id/ventilationProgressLayout3One"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateOnly="true"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 二代放风机 -->
+
+    <LinearLayout
+        android:id="@+id/ventilationControlLayoutTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ventilationUpTwo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/video_up"
+            android:gravity="center"
+            android:text="上行"
+            android:textColor="@drawable/selector_tv_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ventilationDownTwo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/video_down"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@drawable/selector_tv_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ventilationStopTwo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/video_stop"
+            android:gravity="center"
+            android:text="停止"
+            android:textColor="@drawable/selector_tv_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ventilationOneQuarterTwo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/video_left"
+            android:gravity="center"
+            android:text="25%"
+            android:textColor="@drawable/selector_tv_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ventilationHalfTwo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/video_left"
+            android:gravity="center"
+            android:text="50%"
+            android:textColor="@drawable/selector_tv_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ventilationThreeQuarterTwo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/video_right"
+            android:gravity="center"
+            android:text="75%"
+            android:textColor="@drawable/selector_tv_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shed_bg" />
+
+</LinearLayout>

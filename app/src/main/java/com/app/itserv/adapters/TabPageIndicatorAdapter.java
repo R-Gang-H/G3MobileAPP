@@ -1,0 +1,48 @@
+package com.app.itserv.adapters;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+import com.app.itserv.fragments.ItemFragment;
+
+/**
+ * @author haoruigang
+ * @Package com.app.itserv.activity
+ * @project yyshed
+ * @ClassName: AdvisoryPagerAdapter
+ * @Description: 咨询建议ViewPager适配器
+ * @date 2017-6-24 下午3:28:48
+ */
+
+public class TabPageIndicatorAdapter extends FragmentPagerAdapter {
+
+    private String[] TITLE = null;
+
+    public TabPageIndicatorAdapter(FragmentManager fm, String[] title) {
+        super(fm);
+        this.TITLE = title;
+    }
+
+    @Override
+    public Fragment getItem(int position) {
+        // 新建一个Fragment来展示ViewPager item的内容，并传递参数
+        Fragment fragment = new ItemFragment();
+        Bundle args = new Bundle();
+        args.putString("arg", TITLE[position % TITLE.length]);
+        args.putInt("position", position);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return TITLE[position % TITLE.length];
+    }
+
+    @Override
+    public int getCount() {
+        return TITLE.length;
+    }
+}

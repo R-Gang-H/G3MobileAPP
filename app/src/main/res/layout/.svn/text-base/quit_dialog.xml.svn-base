@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <Button
+
+            android:id="@+id/btn_ensurequit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/green2"
+            android:drawableLeft="@drawable/btn_ensurequit"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="退出当前账号"
+            android:textColor="@drawable/login_selector_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/btn_classquit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/green2"
+            android:drawableLeft="@drawable/btn_classquit"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="关闭云洋e农管家"
+            android:textColor="@drawable/login_selector_text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

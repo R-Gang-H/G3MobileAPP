@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao
+END
+DBShedStrategyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DBShedStrategyDao.java
+END
+DBAlarmEventDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DBAlarmEventDao.java
+END
+DBAlarmStrategyCustomDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DBAlarmStrategyCustomDao.java
+END
+DBAlarmStrategyDefault.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DBAlarmStrategyDefault.java
+END
+DBAlarmStrategyDefaultDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DBAlarmStrategyDefaultDao.java
+END
+DBAlarmEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DBAlarmEvent.java
+END
+DBAlarmStrategyCustom.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DBAlarmStrategyCustom.java
+END
+DBShedStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DBShedStrategy.java
+END
+DaoMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DaoMaster.java
+END
+DaoSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java-gen/cn.yyshed.dao/DaoSession.java
+END

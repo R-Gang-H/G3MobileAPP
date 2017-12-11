@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart
+END
+UrlEncodingHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart/UrlEncodingHelper.java
+END
+FilePart.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart/FilePart.java
+END
+MultipartEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart/MultipartEntity.java
+END
+OutputStreamProgress.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart/OutputStreamProgress.java
+END
+MultipartProgressEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart/MultipartProgressEntity.java
+END
+Boundary.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart/Boundary.java
+END
+BasePart.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart/BasePart.java
+END
+StringPart.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart/StringPart.java
+END
+Part.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/toolbox/multipart/Part.java
+END

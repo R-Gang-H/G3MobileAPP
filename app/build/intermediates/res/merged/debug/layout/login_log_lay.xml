@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_back_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 登录日志标题 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:paddingLeft="10dip"
+                android:text="登录日志"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!--<include layout="@layout/login_log_items" />-->
+
+        <com.app.itserv.views.LoadingFrameView
+            android:id="@+id/load_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.app.itserv.views.PullToRefreshListView
+                android:id="@+id/list_login_log_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:scrollbars="none" />
+        </com.app.itserv.views.LoadingFrameView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/btn_plan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@drawable/item_grid_header_arrow_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预案设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+
+        <ImageView
+            android:id="@+id/btn_plan_submit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/submit" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="预案名称"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/Strategy_plan_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/input1"
+                    android:hint="请填写预案名称"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+            <!--电池 -->
+            <include layout="@layout/st_power_supply_alarm" />
+            <!--空气温度 -->
+            <include layout="@layout/st_temperature_alarm" />
+            <!--空气湿度 -->
+            <include layout="@layout/st_humidity_alarm" />
+            <!--土壤温度 -->
+            <include layout="@layout/st_soil_temperature_alarm" />
+            <!--土壤湿度 -->
+            <include layout="@layout/st_soil_humidity_alarm" />
+            <!--光照 -->
+            <include layout="@layout/st_lux_alarm" />
+            <!--一氧化碳 -->
+            <include layout="@layout/st_co_alarm" />
+            <!--二氧化碳 -->
+            <include layout="@layout/st_co2_alarm" />
+            <!--烟雾浓度 -->
+            <include layout="@layout/st_smoke_ppm_alarm" />
+            <!--EC值-->
+            <!-- <include layout="@layout/st_ec_alarm" />  -->
+            <!--PH值-->
+            <!-- <include layout="@layout/st_ph_alarm" />  -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

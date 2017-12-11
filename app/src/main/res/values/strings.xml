@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">e农</string>
+
+    <style name="CustomWindowTitleBackground"></style>
+
+    <style name="test" parent="android:Theme">
+        <item name="android:windowTitleSize">40dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+    <!-- 红色（严重）、橙色（重要）、黄色（一般） -->
+    <string name="red_serious">红色</string>
+    <string name="orange_important">橙色</string>
+    <string name="yellow_general">黄色</string>
+    <!-- 2代修改代码 -->
+    <string name="xlistview_header_last_time">最后更新时间：</string>
+    <!-- 获取 Token -->
+    <string name="weibosdk_demo_obtain_token_via_sso_all_in_one">SSO 授权（ALL IN ONE）</string>
+    <string name="weibosdk_demo_obtain_token_via_web">SSO 授权（Web）</string>
+    <string name="weibosdk_demo_obtain_token_via_sso">SSO 授权（仅客户端）</string>
+    <string name="weibosdk_demo_obtain_token_via_mobile">手机短信注册登录</string>
+    <string name="weibosdk_demo_obtain_token_via_signature">Web 授权</string>
+    <string name="weibosdk_demo_obtain_token_via_quick_sso">通过微博客户端快速授权</string>
+    <string name="weibosdk_demo_obtain_token_via_code">通过 Code 获取 Token</string>
+    <string name="weibosdk_demo_obtain_token_logout">用户登出</string>
+    <string name="weibosdk_demo_token_info">Token 信息：</string>
+    <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <string name="weibosdk_demo_obtain_token_hint"><b>请注意：</b>\n<li>SSO 登录需要微博客户端的支持，目前仅 3.0.0 及以上微博客户端版本支持 SSO；如果未安装，将自动转为 Oauth2.0 Web 授权认证（即第一种认证方式）</li>\n<li>如果您通过方式一和方式二获取不到 Token，而是获取到 code，那说明您的包名和签名存在问题，请到开放平台注册包名和签名。详情请查看 FAQ 文档</li></string>
+    <string name="weibosdk_demo_obtain_token_via_sso_hint">使用 SSO 登录前，请检查手机上是否已经安装新浪微博客户端，目前仅 3.0.0 及以上微博客户端版本支持 SSO；如果未安装，将自动转为 Oauth2.0 进行认证。</string>
+    <string name="weibosdk_demo_obtain_token_via_code_hint"><b>请注意：</b>基于以下几点原因，您可能不想使用前面的两种授权方式：\n<li>出于安全性的考虑，您不信任目前使用应用的包名和签名来获取 Token 的方式</li>\n<li>您不想安装微博客户端</li>\n您可以自行通过 Code 来获取 Token。通过这种方式需要使用到 APP_SECRET，请务必妥善保管好自己的 APP_SECRET，<b>不要直接暴露在程序中，泄露有风险</b>。\n<b>更多细节请查看：</b><a href="http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E#Web.E5.BA.94.E7.94.A8.E7.9A.84.E9.AA.8C.E8.AF.81.E6.8E.88.E6.9D.83">验证授权步骤</a></string>
+    <string name="weibosdk_demo_step_to_obtain_code">第一步：获取 Code</string>
+    <string name="weibosdk_demo_step_to_obtain_token">第二步：通过 Code 获取 Token</string>
+    <string name="weibosdk_demo_code_text_hint">第一步获取到的 Code：（一次性有效）</string>
+    <string name="weibosdk_demo_token_text_hint">第二步获取到的 Token：</string>
+    <string name="weibosdk_demo_token_to_string_format">Token：%1$s \nRefresh Token：%2$s \nexpires_in：%3$s</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_toast_obtain_code_success">获取 Code 成功</string>
+    <string name="weibosdk_demo_toast_obtain_code_failed">获取 Code 失败</string>
+    <string name="weibosdk_demo_toast_obtain_token_success">获取 Token 成功</string>
+    <string name="weibosdk_demo_toast_obtain_token_failed">获取 Token 失败</string>
+    <string name="setting">设置</string>
+    <string name="sysTitle">X5</string>
+    <string name="urllabel">登录地址</string>
+    <string name="refresh">刷新</string>
+    <string name="ok">是</string>
+    <string name="no">否</string>
+    <string name="save">保存</string>
+    <string name="close">取消</string>
+    <string name="exit">退出</string>
+    <string name="settingDlgTitle">设置登录信息</string>
+    <string name="quitTip">是否要退出系统？</string>
+    <string name="loadingTip">系统正在加载，请稍候！</string>
+    <string name="main_home">首页</string>
+    <string name="main_news">待办</string>
+    <string name="main_my_info">我的收藏</string>
+    <string name="menu_search">搜索</string>
+    <string name="more">更多</string>
+    <string name="fileNotFound">找不到网页</string>
+    <string name="phoneTip">您的手机号为 %s</string>
+    <string name="soft_update_no">当前已经是最新版本！</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，是否立即更新？</string>
+    <string name="soft_update_updatebtn">立即更新</string>
+    <string name="soft_update_later">以后再说</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="update_btn_sure">确定</string>
+    <string name="update_btn_cancel">取消</string>
+    <string name="reset_password_tip">已给你的手机%s发送验证码</string>
+    <string name="area_str">%s万平米（1万亩）</string>
+    <string name="expectation_str">%s万公斤</string>
+    <string name="plant_info">%1$s月%2$s万</string>
+    <string name="about_title">关于e农</string>
+    <string name="ipc_title">摄像头</string>
+    <string name="feedback_title">感谢您的宝贵意见</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="register_title">注册</string>
+    <string name="resetpsd_title">重置密码</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Company">北京云洋数据科技有限公司</string>
+    <string name="about_text">北京云洋数据科技有限公司  copyright @ 2015</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="pulltorefresh_pull">下拉刷新</string>
+    <string name="pulltorefresh_release">松开刷新</string>
+    <string name="pulltorefresh_refreshing">正在刷新...</string>
+    <string name="pulltorefresh_last_updated">最近刷新：</string>
+    <string name="pulltorefresh_pull_up">上拉加载</string>
+    <string name="pulltorefresh_release_up">松开加载</string>
+    <string name="pulltorefresh_refreshing_up">正在加载...</string>
+    <string name="pulltorefresh_last_updated_up">最近加载：</string>
+    <!-- 2代修改代码 -->
+
+
+    <!-- 3代修改代码 -->
+    <string name="home_page_title">云洋e农管家</string>
+    <string name="bjyysjkjyxgs">版权所有:北京云洋数据科技有限公司</string>
+    <string name="test_paoma">2017年5月9日18:02:51 北京云洋数据科技有限公司     2017年5月9日18:02:51 北京云洋数据科技有限公司      2017年5月9日18:02:51 北京云洋数据科技有限公司     2017年5月9日18:02:51 北京云洋数据科技有限公司</string>
+    <string name="tv_weather">天气预报</string>
+    <string name="tv_information">农业资讯</string>
+    <string name="tv_market">市场行情</string>
+    <string name="tv_shed_connected_internet">棚联网</string>
+    <string name="tv_farming_report">农事填报</string>
+    <string name="tv_farming_task">农事任务</string>
+    <string name="tv_farming_record">农事记录</string>
+    <string name="tv_sys_alarm">系统告警</string>
+    <string name="tv_sys_announ">系统公告</string>
+    <string name="tv_internal_msg">内部消息</string>
+    <string name="tv_adv_sug">咨询建议</string>
+    <string name="tv_login_log">登录日志</string>
+    <string name="tv_origin_mag">溯源管理</string>
+    <string name="tv_shed_info">大棚监控</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="register_agree">注册即表示本人已同意《公司协议》</string>
+    <string name="username">请输入手机号/账号</string>
+    <string name="ed_psd">6到20位字母数字组合</string>
+    <string name="show_pwd">显示密码明文</string>
+    <string name="remember_password">记住密码</string>
+    <string name="submite">提交</string>
+    <string name="change_psd">修改密码</string>
+    <string name="reset">重置</string>
+    <string name="add_user">新增</string>
+    <string name="setting_user">设置</string>
+    <string name="sort">排序</string>
+    <string name="btn_top">最上（Top）</string>
+    <string name="btn_bottom">最下（Bottom）</string>
+    <string name="btn_up">向上（Up）</string>
+    <string name="btn_down">向下（Down）</string>
+    <string name="btn_upload">上传</string>
+    <string name="btn_gate_bound">绑定</string>
+    <string name="btn_comfirm_bind">确定绑定</string>
+    <string name="btn_comfirm_unbind">确定解绑</string>
+    <string name="btn_comfirm_disable">确定停用</string>
+    <string name="btn_comfirm_enable">确定启用</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_distri">分配</string>
+    <string name="btn_select">查询</string>
+    <string name="btn_add">新增</string>
+    <string name="btn_copy">复制</string>
+    <string name="btn_save_draft">保存草稿</string>
+    <string name="direct_alloca">直接分配</string>
+    <string name="btn_distribu">分配</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_close">关闭</string>
+    <string name="btn_comfirm">确认</string>
+    <string name="btn_collecting">领用</string>
+    <string name="btn_start_task">开始任务</string>
+    <string name="btn_record">记录农事</string>
+    <string name="auto_build">自动生成</string>
+    <string name="btn_manual_edit">手动编辑</string>
+    <string name="btn_add_send">发送</string>
+    <string name="comfirm_send">确认发送</string>
+    <string name="comfirm_reply">确认回复</string>
+    <string name="add_ques">追加提问</string>
+    <string name="close_problem">关闭问题</string>
+    <string name="cus_ser">客服</string>
+    <string name="banner_pager">广告</string>
+    <string name="fw_wifi_notice">您正在使用新的WiFi网络.若登陆,则表示您相信该网络,下次将不再提醒!</string>
+    <string name="fw_continue_use">继续使用</string>
+    <string name="fw_goto_setting">设置网络</string>
+    <string name="fw_not_conn_notice">无法检测到可用网络,是否进行网络设置?</string>
+    <string name="network_error">请求失败，请检查网络是否可用</string>
+    <string name="date_migra">操作说明:点击"绑定"按钮，对应网关将自动与当前大棚绑定。</string>
+    <string name="ruweiqidong">入围启动</string>
+
+    <!-- 3代修改代码 -->
+    <string name="loading">正在加载数据...</string>
+    <string name="no_content">暂无内容</string>
+    <string name="network_load_error">网络不太顺畅</string>
+    <string name="refresh_try">重新加载</string>
+    <string name="camera">拍照</string>
+    <string name="album">相册</string>
+    <string name="replycontent">答复内容:</string>
+    <string name="execution_time">"执行时间: "</string>
+    <string name="working_shed">工作大棚</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+</resources>

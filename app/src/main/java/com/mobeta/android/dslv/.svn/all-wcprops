@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/G3MobileAPP/!svn/ver/117/src/trunk/G3MobileAPP/app/src/main/java/com/mobeta/android/dslv
+END
+DragSortController.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/app/src/main/java/com/mobeta/android/dslv/DragSortController.java
+END
+SimpleFloatViewManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/mobeta/android/dslv/SimpleFloatViewManager.java
+END
+DragSortItemView.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/mobeta/android/dslv/DragSortItemView.java
+END
+ResourceDragSortCursorAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/mobeta/android/dslv/ResourceDragSortCursorAdapter.java
+END
+DragSortItemViewCheckable.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/mobeta/android/dslv/DragSortItemViewCheckable.java
+END
+DragSortCursorAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/mobeta/android/dslv/DragSortCursorAdapter.java
+END
+DragSortListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/117/src/trunk/G3MobileAPP/app/src/main/java/com/mobeta/android/dslv/DragSortListView.java
+END
+SimpleDragSortCursorAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/app/src/main/java/com/mobeta/android/dslv/SimpleDragSortCursorAdapter.java
+END

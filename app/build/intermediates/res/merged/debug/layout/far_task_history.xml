@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/historyscore_tb"
+              android:orientation="vertical">
+
+    <!-- 时间 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/text_size_4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_size_12"
+            android:layout_marginRight="@dimen/text_size_4"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/text_size_4"
+                android:text="时间:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"/>
+
+            <TextView
+                android:id="@+id/tv_opera_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2017年5月23日"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_operator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/text_size_4"
+                android:gravity="center_vertical|right"
+                android:text="赵总:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"/>
+
+            <TextView
+                android:id="@+id/tv_opera_action"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="[分配任务]"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 说明 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/text_size_4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/text_size_12"
+                android:layout_marginRight="@dimen/text_size_4"
+                android:text="说明:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"/>
+
+            <TextView
+                android:id="@+id/tv_dist_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="请每天执行完毕后用手机APP进行农事填报。"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 接收人 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/text_size_4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/text_size_12"
+                android:layout_marginRight="@dimen/text_size_4"
+                android:text="接收人:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"/>
+
+            <TextView
+                android:id="@+id/tv_sendee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="张三、李四"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

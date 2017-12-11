@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 答复标题 -->
+
+    <LinearLayout
+        android:id="@+id/ll_examine_prob_lay_list_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_examine_prob_lay_list_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="答复:"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_receive_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_size_12"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!-- 信息内容 -->
+
+            <TextView
+                android:id="@+id/reply_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_size_3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 答复时间 -->
+
+            <TextView
+                android:id="@+id/tv_examine_prob_lay_list_replytime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:text="答复时间:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+
+            <!-- 信息时间 -->
+
+            <TextView
+                android:id="@+id/reply_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="2017-03-01 09:18:47"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

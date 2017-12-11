@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_back_title" />
+
+    <!-- 账户信息标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:gravity="center"
+            android:text="大棚排序"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:text="操作说明：排序后，系统将按照排列的顺序进行显示."
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.mobeta.android.dslv.DragSortListView
+            android:id="@+id/follow_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:divider="#fafafa"
+            android:dividerHeight="5dp"
+            android:padding="10dp"
+            dslv:click_remove_id="@id/click_remove"
+            dslv:collapsed_height="1px"
+            dslv:drag_enabled="true"
+            dslv:drag_handle_id="@id/drag_handle"
+            dslv:drag_scroll_start="0.33"
+            dslv:drag_start_mode="onDown"
+            dslv:float_alpha="0.6"
+            dslv:remove_enabled="true"
+            dslv:remove_mode="clickRemove"
+            dslv:slide_shuffle_speed="0.3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/shallowblue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 提交按钮 -->
+
+            <Button
+                android:id="@+id/changepsw_submite"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/contact_icon_wh"
+                android:background="@drawable/change_bg"
+                android:padding="6dp"
+                android:text="@string/submite"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <!-- 重置按钮 -->
+
+            <Button
+                android:id="@+id/changepsw_reset"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/contact_icon_wh"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/change_bg"
+                android:padding="6dp"
+                android:text="@string/reset"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

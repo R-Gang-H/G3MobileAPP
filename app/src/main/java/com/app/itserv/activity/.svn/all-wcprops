@@ -1,0 +1,629 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/G3MobileAPP/!svn/ver/152/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity
+END
+OrganizaAddandEditActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/OrganizaAddandEditActivity.java
+END
+EquipmentManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/EquipmentManagerActivity.java
+END
+BaseManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/123/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/BaseManagerActivity.java
+END
+gHRealMonitorActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/146/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/gHRealMonitorActivity.java
+END
+GreenHouseExamineEmployeeManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseExamineEmployeeManagerActivity.java
+END
+BoundGreenHouseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/BoundGreenHouseActivity.java
+END
+NBIOTActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/146/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/NBIOTActivity.java
+END
+MySysNoticeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/108/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/MySysNoticeActivity.java
+END
+MigrationDataActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/MigrationDataActivity.java
+END
+GateDetailsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GateDetailsActivity.java
+END
+BaseViewActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/BaseViewActivity.java
+END
+MerchantInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/MerchantInfoActivity.java
+END
+OrganizationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/OrganizationActivity.java
+END
+BaseAddandEditActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/BaseAddandEditActivity.java
+END
+FarmingTaskDetailsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingTaskDetailsActivity.java
+END
+FarmingTaskAddActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingTaskAddActivity.java
+END
+GreenHouseManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/145/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseManagerActivity.java
+END
+FarmingCloseActivit.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingCloseActivit.java
+END
+MyEventActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/108/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/MyEventActivity.java
+END
+ShowEventDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ShowEventDetailActivity.java
+END
+AdvisoryproposalActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/AdvisoryproposalActivity.java
+END
+FarmingPlantingSchemeSetingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingPlantingSchemeSetingActivity.java
+END
+ShowSysNoticeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ShowSysNoticeActivity.java
+END
+GreenHouseImgManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/G3MobileAPP/!svn/ver/99/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseImgManagerActivity.java
+END
+CaptureActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/CaptureActivity.java
+END
+FarmingExecuteManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingExecuteManagerActivity.java
+END
+FarmingCollectingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingCollectingActivity.java
+END
+RegisterActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/RegisterActivity.java
+END
+GreenHouseGateDisableActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseGateDisableActivity.java
+END
+ShareActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/123/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ShareActivity.java
+END
+ExamineProblemActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/145/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ExamineProblemActivity.java
+END
+AddFarmingRecordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/150/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/AddFarmingRecordActivity.java
+END
+FarmingDistribuActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingDistribuActivity.java
+END
+GuideActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/36/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GuideActivity.java
+END
+MyTodayTaskFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/MyTodayTaskFragment.java
+END
+GreenHouseSortActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/118/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseSortActivity.java
+END
+LoginLogActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/99/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/LoginLogActivity.java
+END
+WebViewActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/127/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/WebViewActivity.java
+END
+RoleManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/RoleManagerActivity.java
+END
+MyFarmingReportActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/MyFarmingReportActivity.java
+END
+WeatherActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/118/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/WeatherActivity.java
+END
+ShedActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ShedActivity.java
+END
+FarmingTaskActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/145/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingTaskActivity.java
+END
+MyFarmingRecordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/MyFarmingRecordActivity.java
+END
+BaseSortActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/91/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/BaseSortActivity.java
+END
+GreenHouseAddEditActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/152/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseAddEditActivity.java
+END
+AboutActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/84/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/AboutActivity.java
+END
+FarmingPlanAddActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/145/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingPlanAddActivity.java
+END
+OrgSpinnerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/OrgSpinnerAdapter.java
+END
+NewsContentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/NewsContentActivity.java
+END
+UserRoleOrganizaActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/UserRoleOrganizaActivity.java
+END
+FarmingTaskSettingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingTaskSettingActivity.java
+END
+RealMonitorActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/RealMonitorActivity.java
+END
+FarmingTaskEditActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingTaskEditActivity.java
+END
+SettingUserActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/142/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/SettingUserActivity.java
+END
+ContactTitleActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/109/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ContactTitleActivity.java
+END
+ProtocolActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/84/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ProtocolActivity.java
+END
+InternalMessageExamineActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/InternalMessageExamineActivity.java
+END
+AlarmPlanSettingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/AlarmPlanSettingActivity.java
+END
+RoleAddandEditActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/RoleAddandEditActivity.java
+END
+UpdateManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/UpdateManager.java
+END
+ShedSetingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ShedSetingActivity.java
+END
+GreenHouseDistriManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/G3MobileAPP/!svn/ver/134/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseDistriManagerActivity.java
+END
+FarmingManageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/127/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingManageActivity.java
+END
+AddressLinkageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/AddressLinkageActivity.java
+END
+FarmingRecordManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingRecordManagerActivity.java
+END
+GreenHouseImgEditActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseImgEditActivity.java
+END
+ChangePasswordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ChangePasswordActivity.java
+END
+UserAddandEditActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/UserAddandEditActivity.java
+END
+GreenHouseGateEnableActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseGateEnableActivity.java
+END
+ResetPasswordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/84/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ResetPasswordActivity.java
+END
+InternalMessageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/InternalMessageActivity.java
+END
+LoginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/LoginActivity.java
+END
+UserGreenHouseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/UserGreenHouseActivity.java
+END
+SplashActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/85/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/SplashActivity.java
+END
+FarmingCancelActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingCancelActivity.java
+END
+CameraActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/150/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/CameraActivity.java
+END
+GreenHouseGateBindActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/138/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseGateBindActivity.java
+END
+StaffManageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/StaffManageActivity.java
+END
+SmartLimitDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/SmartLimitDetailActivity.java
+END
+GreenHouseEmployeeManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseEmployeeManagerActivity.java
+END
+LoginAndRegister.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/LoginAndRegister.java
+END
+HomeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/147/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/HomeActivity.java
+END
+GreenHouseGateUnbindActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/G3MobileAPP/!svn/ver/84/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseGateUnbindActivity.java
+END
+FarmingRecordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingRecordActivity.java
+END
+MyTodayTaskDetilActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/MyTodayTaskDetilActivity.java
+END
+AlarmNumberActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/132/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/AlarmNumberActivity.java
+END
+AddAlarmNumberActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/AddAlarmNumberActivity.java
+END
+FarmingExamingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingExamingActivity.java
+END
+EnvironmentalCurveActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/121/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/EnvironmentalCurveActivity.java
+END
+ConverSationsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ConverSationsActivity.java
+END
+ServerUrlActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/84/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ServerUrlActivity.java
+END
+FarmingclassSetingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FarmingclassSetingActivity.java
+END
+AdvisoryAddActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/139/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/AdvisoryAddActivity.java
+END
+CameraPopupActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/129/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/CameraPopupActivity.java
+END
+ChangeAlarmPlanSettingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/ChangeAlarmPlanSettingActivity.java
+END
+FeedbackActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/FeedbackActivity.java
+END
+GreenHouseGateManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseGateManagerActivity.java
+END
+GetLimitActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/117/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GetLimitActivity.java
+END
+MyFarmingTaskActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/91/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/MyFarmingTaskActivity.java
+END
+DetailshedActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/88/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/DetailshedActivity.java
+END
+GreenHouseViewActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/GreenHouseViewActivity.java
+END
+UserManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/126/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/UserManagerActivity.java
+END
+SendInternalMessageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/33/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/activity/SendInternalMessageActivity.java
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley
+END
+NetworkResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/NetworkResponse.java
+END
+Request.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/Request.java
+END
+Network.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/Network.java
+END
+ApplicationController.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/ApplicationController.java
+END
+CacheDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/CacheDispatcher.java
+END
+ExecutorDelivery.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/ExecutorDelivery.java
+END
+RequestTickle.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/RequestTickle.java
+END
+Cache.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/Cache.java
+END
+RequestQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/RequestQueue.java
+END
+Response.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/Response.java
+END
+RetryPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/RetryPolicy.java
+END
+DefaultRetryPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/DefaultRetryPolicy.java
+END
+VolleyLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/VolleyLog.java
+END
+ResponseDelivery.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/ResponseDelivery.java
+END
+NetworkDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/NetworkDispatcher.java
+END

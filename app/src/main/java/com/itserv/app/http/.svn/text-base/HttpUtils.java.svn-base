@@ -1,0 +1,123 @@
+package com.itserv.app.http;
+
+import android.text.TextUtils;
+import android.util.Log;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.error.AuthFailureError;
+import com.android.volley.error.VolleyError;
+import com.android.volley.request.StringRequest;
+import com.app.itserv.MineApplication;
+import com.itserv.app.util.LogUtils;
+import com.yycloud.app.utils.MyVolley;
+import com.yycloud.app.utils.TAMyProfile;
+
+import org.apache.log4j.Logger;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 作者： 周作威 on 2017/9/19 09:33.
+ * 类描述：网络封装类
+ */
+public class HttpUtils {
+    private Logger logger;
+    private final RequestQueue queue;
+    public static String token;
+
+    private HttpUtils() {
+        MyVolley.init(MineApplication.getInstance());
+        queue = MyVolley.getRequestQueue();
+        logger = Logger.getLogger(getClass());
+    }
+
+    private static class SingletonHolder {
+        static HttpUtils INSTANCE = new HttpUtils();
+    }
+
+    public static HttpUtils getInstance() {
+        return SingletonHolder.INSTANCE;
+    }
+
+    // get请求  周作威  2017/9/19 10:13
+    public void httpGet(String tag, String url, final Map<String, String> map, final HttpCallBack callback) {
+        setHttp(tag, Request.Method.GET, url, map, callback);
+    }
+
+    // post请求  周作威  2017/9/19 10:14
+    public void httpPost(String tag, String url, final Map<String, String> map, final HttpCallBack callback) {
+        setHttp(tag, Request.Method.POST, url, map, callback);
+    }
+
+    public void setHttp(final String tag, int method, final String url, final Map<String, String> map, final HttpCallBack callback) {
+        String params = "";
+        if (null != map)
+            for (String s : map.keySet()) {
+                params += (s + ":" + map.get(s) + "&");
+            }
+        logger.info("请求:" + url + "    参数：" + params);
+//        map.put("time", System.currentTimeMillis() + "");
+        StringRequest req = new StringRequest(method, url, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                int segmentSize = 3000;
+                long length = response.length();
+                if (length <= segmentSize) {
+                    // 长度小于等于限制直接打印
+                    logger.info("请求:" + url + "   请求结果:\n" + response);
+                } else {
+                    logger.info("请求:" + url + "   请求结果:");
+                    while (length > segmentSize) {
+//                        循环分段打印日志
+                        String logContent = response.substring((segmentSize - 3000), segmentSize);
+                        logger.info(logContent);
+                        segmentSize += 3000;
+                    }
+                    logger.info(response.substring((segmentSize - 3000), response.length()));// 打印剩余日志
+                }
+                if (null != callback)
+                    callback.onResponse(response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                logger.info("请求:" + url + "    请求失败", error);
+                if (null != callback)
+                    callback.error(error);
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                if (null == map) {
+                    return new HashMap<>();
+                }
+                return map;
+            }
+
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<>();
+                headers.put("Accept", "application/json");
+                headers.put("Content-Type", "application/json; charset=UTF-8");
+                return super.getHeaders();
+            }
+
+        };
+        HashMap<String, String> headers = new HashMap<>();
+        if (null != token) {
+            headers.put("User-Agent", TAMyProfile.http_user_agent);
+            headers.put("Authorization", "bearer " + token);
+            req.setHeaders(headers);
+        }
+        if (!TextUtils.isEmpty(tag))
+            req.setTag(tag);
+        req.setShouldCache(false);
+        queue.add(req);
+        if (null != callback)
+            callback.setRequest(req);
+    }
+}

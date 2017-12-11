@@ -1,0 +1,399 @@
+package com.app.itserv.activity;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.os.Handler;
+import android.text.InputType;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.app.itserv.BaseActivity;
+import com.app.itserv.fragments.VersionUtilNew;
+import com.app.itserv.jparser.JsonLoginObject;
+import com.app.itserv.jparser.JsonLoginObject.AttributesBean;
+import com.app.itserv.jparser.JsonLoginObject.ObjBean;
+import com.app.itserv.jparser.JsonLoginObject.ObjBean.CurrentDepartBean;
+import com.google.gson.Gson;
+import com.itserv.app.bean.Version;
+import com.itserv.app.config.Config;
+import com.itserv.app.http.HttpCallBack;
+import com.itserv.app.http.HttpManager;
+import com.itserv.app.http.HttpUtils;
+import com.itserv.app.util.LogUtils;
+import com.itserv.app.util.PreferencesUtils;
+import com.itserv.app.util.ToastUtils;
+import com.itserv.shed.R;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.yycloud.app.AlarmStrategyManager;
+import com.yycloud.app.utils.TAPreferenceUtil;
+import com.yycloud.app.utils.TAUtils;
+import com.yycloud.app.utils.WapiUtil;
+
+import org.apache.http.Header;
+
+import java.util.List;
+
+import butterknife.BindView;
+
+import static com.oneapm.agent.android.OneApmAgent.log;
+
+/**
+ * @project name：yyshed
+ * @type name：LoginActivity
+ * @description：登录
+ * @author：gang
+ * @date time：2017-6-3 下午4:11:53
+ */
+public class LoginActivity extends BaseActivity implements View.OnClickListener {
+    @BindView(R.id.username)
+    EditText username;
+    @BindView(R.id.psd)
+    EditText pwd;
+    @BindView(R.id.ck_show_pwd)
+    CheckBox ckShowPwd;
+    @BindView(R.id.remenber_psd)
+    CheckBox remenberPsd;
+    @BindView(R.id.login_btn)
+    Button loginBtn;
+    // 用户名　密码
+    private String usernameString = "", pwdString = "";
+
+    @Override
+    protected int layoutViewId() {
+        return R.layout.login_lay;
+    }
+
+    @Override
+    protected void init() {
+        super.init();
+        initViews();
+        // 检查更新
+        checkUpdate();
+    }
+
+    /**
+     * @description：检查更新
+     * @author：gang
+     * @date time：2017-6-3 下午3:57:25
+     */
+    private void checkUpdate() {
+        // 获取service版本号
+        AsyncHttpClient updateClient = new AsyncHttpClient(true, 80, 443);
+        updateClient.get(LoginActivity.this, Config.VERSION_UPDATE_URL,
+                new AsyncHttpResponseHandler() {
+
+                    @Override
+                    public void onFailure(int arg0, Header[] arg1, byte[] arg2,
+                                          Throwable arg3) {
+                        super.onFailure(arg0, arg1, arg2, arg3);
+                    }
+
+                    @Override
+                    @Deprecated
+                    public void onSuccess(int statusCode, Header[] headers,
+                                          String content) {
+                        // 获取本地版本号(versionCode)
+                        int versionCodeNative = 0;
+                        try {
+                            versionCodeNative = LoginActivity.this.getPackageManager()
+                                    .getPackageInfo(LoginActivity.this.getPackageName(),
+                                            0).versionCode;
+                        } catch (NameNotFoundException e) {
+                            e.printStackTrace();
+                        }
+
+                        Gson gson = new Gson();
+                        Version version = gson.fromJson(content, Version.class);
+                        if (Integer.parseInt(version.getVersionCode()) > versionCodeNative && null != LoginActivity.this && !LoginActivity.this.isFinishing()) {
+                            VersionUtilNew.getInstance(LoginActivity.this)
+                                    .showVersionUpdateDialog(versionCodeNative,
+                                            version.getVersionCode(),
+                                            version.getVersionName(),
+                                            Config.DOWN_LOAD_URL, version.getDesc());
+                        }
+
+                        super.onSuccess(statusCode, headers, content);
+                    }
+
+                });
+    }
+
+
+    private void initViews() {
+        loginBtn.setOnClickListener(this);
+        TAPreferenceUtil preferenceUtil = TAPreferenceUtil
+                .getInstance(this);
+        String user = preferenceUtil.getString(TAPreferenceUtil.REMEMBER_USER,
+                "");
+        username.setText(user);
+        Boolean isRememberPsd = preferenceUtil.getBoolean(
+                TAPreferenceUtil.IS_REMEMBER_PSD, false);
+        remenberPsd.setChecked(isRememberPsd);
+        if (isRememberPsd) {
+            String psd = preferenceUtil.getString(
+                    TAPreferenceUtil.REMEMBER_PSD, "");
+            pwd.setText(psd);
+        }
+        remenberPsd.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
+                remenberPsd.setChecked(arg1);
+            }
+        });
+
+        Boolean isAutoLogin = preferenceUtil.getBoolean(
+                TAPreferenceUtil.IS_AUTOLOGIN, false);
+        /* 显示明文密码start */
+        Boolean isshowpwd = preferenceUtil.getBoolean(
+                TAPreferenceUtil.IS_SHOW_PWD, false);
+        ckShowPwd.setChecked(isshowpwd);
+        if (isshowpwd) {
+            pwd.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+        }
+        ckShowPwd.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                // TODO Auto-generated method stub
+                if (isChecked) {
+                    pwd.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                } else {
+                    pwd.setInputType(InputType.TYPE_CLASS_TEXT
+                            | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+                ckShowPwd.setChecked(isChecked);
+            }
+        });
+        /* 显示明文密码end */
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.login_btn:
+                Log.v("login", "登录被点击");
+                usernameString = username.getText().toString().trim();
+                pwdString = pwd.getText().toString().trim();
+
+                // 用户名和密码不能为空
+                if (TextUtils.isEmpty(usernameString) || TextUtils.isEmpty(pwdString)) {
+                    ToastUtils.makeTextShort("请输入正确的用户名和密码");
+                    return;
+                }
+                // 密码
+                if (pwdString.length() < 6 || pwdString.length() > 20) {
+                    ToastUtils.makeTextShort("请输入6到20位字母数字组合!");
+                    return;
+                }
+
+                final TAPreferenceUtil preferenceUtil = TAPreferenceUtil
+                        .getInstance(LoginActivity.this);
+                preferenceUtil.saveString(TAPreferenceUtil.REMEMBER_USER, usernameString);
+                if (remenberPsd.isChecked()) {
+                    preferenceUtil.saveBoolean(TAPreferenceUtil.IS_REMEMBER_PSD,
+                            true);
+                    preferenceUtil.saveString(TAPreferenceUtil.REMEMBER_PSD, pwdString);
+                } else {
+                    preferenceUtil.saveBoolean(TAPreferenceUtil.IS_REMEMBER_PSD,
+                            false);
+                    preferenceUtil.saveString(TAPreferenceUtil.REMEMBER_PSD, "");
+                }
+                setlogin(usernameString, pwdString);
+                break;
+            case R.id.registerAction:
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                LoginActivity.this.startActivity(intent);
+                break;
+            case R.id.forget_psd:
+                Intent intent2 = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+                LoginActivity.this.startActivity(intent2);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void setlogin(String username, String pwd) {
+        HttpManager.getInstance().doLoginRequest(TAG, username, pwd, new HttpCallBack<JsonLoginObject>(LoginActivity.this, true) {
+            @Override
+            public void onSuccess(JsonLoginObject jsonloginobject) {
+                int orgNum;
+                long createDate;
+                CurrentDepartBean currentDepart;
+                List<?> tsdeparts = null;
+                int deleteflag;
+                String departid = "";
+                String email = "";
+                String id = "";// 用戶id
+                String mobilePhone = "";
+                String officePhone = "";
+                String password = "";
+                String realName = "";// 真实姓名
+                String signatureFile = "";
+                int status;
+                String tenantId = "";
+                String tenantName = "";// 租户名称
+                String updateBy = "";
+                long updateDate;
+                String updateName = "";
+                String userKey = "";
+                String username = "";
+                String token = "";
+                final TAPreferenceUtil preferenceUtil = TAPreferenceUtil
+                        .getInstance(LoginActivity.this);
+                if (jsonloginobject != null) {
+                    String message = jsonloginobject.getMsg();// 提示消息
+                    Log.v("login", "login :" + message);
+                    if (jsonloginobject.isSuccess()) {// 成功
+                        AttributesBean attribute = jsonloginobject
+                                .getAttributes();
+                        orgNum = attribute.getOrgNum();
+                        PreferencesUtils.putInt(LoginActivity.this, "orgNum", orgNum);
+                        ObjBean objbean = jsonloginobject.getObj();
+                        if (!(objbean == null)) {
+                            createDate = objbean.getCreateDate();
+                            PreferencesUtils.putLong(LoginActivity.this,
+                                    "createDate", createDate);
+                            currentDepart = objbean.getCurrentDepart();
+//                            tsdeparts = currentDepart.getTsdeparts();
+                            deleteflag = objbean.getDeleteFlag();
+                            PreferencesUtils.putInt(LoginActivity.this, "deleteflag",
+                                    deleteflag);
+                            departid = objbean.getDepartid();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "departid", departid);
+                            email = objbean.getEmail();
+                            PreferencesUtils.putString(LoginActivity.this, "email",
+                                    email);
+                            id = objbean.getId();
+                            PreferencesUtils.putString(LoginActivity.this, "id", id);
+                            mobilePhone = objbean.getMobilePhone();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "mobilePhone", mobilePhone);
+                            officePhone = objbean.getOfficePhone();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "officePhone", officePhone);
+                            password = objbean.getPassword();
+                            if (TextUtils.isEmpty(password)) {
+                                if (!TextUtils.isEmpty(pwdString)) {
+                                    password = pwdString;
+                                    preferenceUtil.savePsd(pwdString);
+                                }
+                            }
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "password", password);
+                            realName = objbean.getRealName();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "realName", realName);
+                            signatureFile = objbean.getSignatureFile();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "signatureFile", signatureFile);
+                            status = objbean.getStatus();
+                            PreferencesUtils.putInt(LoginActivity.this, "status",
+                                    status);
+                            tenantId = objbean.getTenantId();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "tenantId", tenantId);
+                            tenantName = objbean.getTenantName();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "tenantName", tenantName);
+                            updateBy = objbean.getUpdateBy();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "updateBy", updateBy);
+                            updateDate = objbean.getUpdateDate();
+                            PreferencesUtils.putLong(LoginActivity.this,
+                                    "updateDate", updateDate);
+                            updateName = objbean.getUpdateName();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "updateName", updateName);
+                            userKey = objbean.getUserKey();
+                            PreferencesUtils.putString(LoginActivity.this, "userKey",
+                                    userKey);
+                            username = objbean.getUserName();
+                            PreferencesUtils.putString(LoginActivity.this,
+                                    "userName", username);
+                            token = objbean.getToken();
+                            WapiUtil.saveSessionToken(token);
+                            PreferencesUtils.putString(LoginActivity.this, "token", token);
+                            HttpUtils.token = token;
+                            if (!TextUtils.isEmpty(username)) {
+                                preferenceUtil.saveUser(username);
+                            }
+                            if (!TextUtils.isEmpty(username)) {
+                                AlarmStrategyManager.getInstance().init(
+                                        new Handler());
+                                LoginActivity.this.startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                                finish();
+                            }
+                        }
+                    } else {// 失败
+                        if (!TextUtils.isEmpty(message)) {
+                            ToastUtils.makeTextShort(message);
+                        } else {
+                            ToastUtils.makeTextShort("网络不可用!");
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+                ToastUtils.makeTextShort("网络不可用!");
+            }
+        });
+    }
+
+
+    /**
+     * 返回
+     */
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent paramKeyEvent) {
+        if ((paramKeyEvent.getAction() == 0)
+                && (paramKeyEvent.getKeyCode() == 4)) {
+            exitApp();
+        }
+        return super.dispatchKeyEvent(paramKeyEvent);
+    }
+
+    /**
+     * 退出
+     */
+    private void exitApp() {
+        AlertDialog.Builder localBuilder = new AlertDialog.Builder(LoginActivity.this);
+        // localBuilder.setTitle("");
+        localBuilder.setMessage("确定退出e农？");
+        localBuilder.setPositiveButton("确定",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(
+                            DialogInterface paramAnonymousDialogInterface,
+                            int paramAnonymousInt) {
+                        finish();
+                        System.exit(0);
+                    }
+                });
+        localBuilder.setNegativeButton("取消", null);
+        localBuilder.create().show();
+    }
+
+    @Override
+    protected void onDestroy() {//解决未关闭dialog而跳转主页时报的异常
+        super.onDestroy();
+        if (VersionUtilNew.getInstance(LoginActivity.this).dialog != null) {
+            VersionUtilNew.getInstance(LoginActivity.this).dialog.dismiss();
+        }
+    }
+}

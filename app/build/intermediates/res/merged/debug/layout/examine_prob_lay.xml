@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_back_title" />
+    <!-- 问题查看标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="问题查看"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.app.itserv.views.PagerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/historyscore_tb"
+                android:orientation="vertical">
+
+                <!-- 问题标题 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkseagreen"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:paddingLeft="10dip"
+                        android:text="问题:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_problem_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dip"
+                        android:text="已答复"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <!-- 问题分类 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:gravity="center_vertical|right"
+                        android:text="问题分类:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/problem_class"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:gravity="center_vertical|right"
+                        android:text="提问时间:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_question_time"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 任务名称 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="标题:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/task_name"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="6"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 详细说明 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="详细说明:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/task_describe"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/ed_username_w"
+                        android:layout_weight="5"
+                        android:background="@drawable/shape_green_rec"
+                        android:enabled="false"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 附件1 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="附件1:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/annex_one"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="6"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:enabled="false"
+                        android:gravity="center_vertical|right"
+                        android:text="查看"
+                        android:textColor="@color/mediumblue"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 附件2 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="附件2:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/annex_two"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="6"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:enabled="false"
+                        android:gravity="center_vertical|right"
+                        android:text="查看"
+                        android:textColor="@color/mediumblue"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 附件3 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="附件3:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/annex_three"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="6"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:enabled="false"
+                        android:gravity="center_vertical|right"
+                        android:text="查看"
+                        android:textColor="@color/mediumblue"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <com.app.itserv.views.ListViewForScrollView
+                    android:id="@+id/examine_pro_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- 确认信息标题 -->
+
+                <LinearLayout
+                    android:id="@+id/examine_pro_ll_notarize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/green2"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="确认信息:"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <!-- 您对答复的意见信息 -->
+
+                <LinearLayout
+                    android:id="@+id/examine_pro_ll_reply_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="top|right"
+                        android:text="您对答复的意见:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/tv_replay_message"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/img_title"
+                        android:layout_weight="2"
+                        android:background="@drawable/shape_green_rec"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:text="已收到"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/shallowblue" />
+
+            <LinearLayout
+                android:id="@+id/examine_pro_ll_supply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <!-- 确认回复按钮 -->
+
+                <Button
+                    android:id="@+id/btn_add_questions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/contact_icon_wh"
+                    android:background="@drawable/change_bg"
+                    android:padding="6dp"
+                    android:text="@string/add_ques"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+
+                <!-- 关闭问题按钮 -->
+
+                <Button
+                    android:id="@+id/btn_close_problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/change_bg"
+                    android:padding="6dp"
+                    android:text="@string/close_problem"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/shallowblue" />
+        </LinearLayout>
+    </com.app.itserv.views.PagerScrollView>
+
+</LinearLayout>

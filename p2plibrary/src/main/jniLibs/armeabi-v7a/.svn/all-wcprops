@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/jniLibs/armeabi-v7a
+END
+libIPCClientNetLib.so
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/jniLibs/armeabi-v7a/libIPCClientNetLib.so
+END
+libipc.so
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/jniLibs/armeabi-v7a/libipc.so
+END
+libavi_utils.so
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/jniLibs/armeabi-v7a/libavi_utils.so
+END
+libjni_nas.so
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/jniLibs/armeabi-v7a/libjni_nas.so
+END
+libPPPP_API.so
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/jniLibs/armeabi-v7a/libPPPP_API.so
+END
+libNasClientNetLib.so
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/jniLibs/armeabi-v7a/libNasClientNetLib.so
+END
+libjni_ipc.so
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/jniLibs/armeabi-v7a/libjni_ipc.so
+END
+libStreamPlayLib.so
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/jniLibs/armeabi-v7a/libStreamPlayLib.so
+END

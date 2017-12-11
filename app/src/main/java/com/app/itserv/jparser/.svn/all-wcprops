@@ -1,0 +1,431 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/G3MobileAPP/!svn/ver/146/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser
+END
+JsonFarTaskSaveObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonFarTaskSaveObject.java
+END
+JsonBelongfarCreateobject.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonBelongfarCreateobject.java
+END
+JsonGreenHouseGatMoSmartSensorObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenHouseGatMoSmartSensorObject.java
+END
+JsonGreenhouseAcerageObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenhouseAcerageObject.java
+END
+JsonGreenhouseManagerObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenhouseManagerObject.java
+END
+JsonMyFarTaskObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonMyFarTaskObject.java
+END
+JsonOrganizaUserRoleObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonOrganizaUserRoleObject.java
+END
+JsonRoleEditObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonRoleEditObject.java
+END
+JsonGreenhouseImgAddObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenhouseImgAddObject.java
+END
+JsonUserGetListObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/124/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonUserGetListObject.java
+END
+JsonProtocolObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonProtocolObject.java
+END
+JsonUserEditObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/114/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonUserEditObject.java
+END
+JsonOrganizationObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonOrganizationObject.java
+END
+JsonGreenHouseGatMoSmartObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenHouseGatMoSmartObject.java
+END
+JsongHouseAllRelayObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/146/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsongHouseAllRelayObject.java
+END
+JsonFarmingRecordCreateObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonFarmingRecordCreateObject.java
+END
+JsonGreenHouseGatMoSmartRleayObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenHouseGatMoSmartRleayObject.java
+END
+JsonMySysNoticeObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonMySysNoticeObject.java
+END
+JsonMySysNoticeSetObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonMySysNoticeSetObject.java
+END
+JsonUserGreenHouseObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/97/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonUserGreenHouseObject.java
+END
+JsonTaskExecDetailObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonTaskExecDetailObject.java
+END
+JsonConverSationObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonConverSationObject.java
+END
+JsonGreenhouseAEObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenhouseAEObject.java
+END
+JsonGreHouExaEmployeObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreHouExaEmployeObject.java
+END
+JsonGreenHouseObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenHouseObject.java
+END
+JsonGateDetailObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGateDetailObject.java
+END
+JsonLoginLogObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/94/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonLoginLogObject.java
+END
+JsonBelongExecuteTaskNameObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonBelongExecuteTaskNameObject.java
+END
+JsonGreenhouseImgObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenhouseImgObject.java
+END
+JsonDelRoleObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonDelRoleObject.java
+END
+JsonBelongTaskNameObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonBelongTaskNameObject.java
+END
+JsonPlanSchemeObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonPlanSchemeObject.java
+END
+JsonAddAdvisoryObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonAddAdvisoryObject.java
+END
+JsonBaseDelObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonBaseDelObject.java
+END
+JsonOrganizaEditObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonOrganizaEditObject.java
+END
+JsonTodayTaskDetailObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonTodayTaskDetailObject.java
+END
+JsonFarTaskAddObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonFarTaskAddObject.java
+END
+JsonGHouseGateObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGHouseGateObject.java
+END
+JsonTodayTaskCollectObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonTodayTaskCollectObject.java
+END
+JsonFarExecuteTaskObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonFarExecuteTaskObject.java
+END
+JsonGreenHouseViewObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenHouseViewObject.java
+END
+JsonDataDictionaryObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonDataDictionaryObject.java
+END
+JsonPlanSchemeParticularsObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonPlanSchemeParticularsObject.java
+END
+JsonExitObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonExitObject.java
+END
+JsonAboutObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonAboutObject.java
+END
+JsonMySysNoticeDetailObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonMySysNoticeDetailObject.java
+END
+JsonFarTaskEditObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonFarTaskEditObject.java
+END
+JsonMerchantInfoObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonMerchantInfoObject.java
+END
+JsonTodayTaskObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonTodayTaskObject.java
+END
+JsonAdvertisingObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/123/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonAdvertisingObject.java
+END
+JsonUserRoleOrgObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonUserRoleOrgObject.java
+END
+JsonGreenhouseAcerageCodeObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreenhouseAcerageCodeObject.java
+END
+JsonBaseExaObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonBaseExaObject.java
+END
+JsonBaseManagerObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/123/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonBaseManagerObject.java
+END
+JsonChangePasswordObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonChangePasswordObject.java
+END
+JsonMigrationDataObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonMigrationDataObject.java
+END
+JsonGreHouEmpObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonGreHouEmpObject.java
+END
+JsonBaseAddObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonBaseAddObject.java
+END
+JsonExamineProblemObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonExamineProblemObject.java
+END
+JsonBelongRecorderObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonBelongRecorderObject.java
+END
+JsonbelongGreenHouseOBject.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonbelongGreenHouseOBject.java
+END
+JsonLoginObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonLoginObject.java
+END
+JsonFarmingExamingObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonFarmingExamingObject.java
+END
+PhoneListBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/G3MobileAPP/!svn/ver/88/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/PhoneListBean.java
+END
+JsonFarTaskDistrObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonFarTaskDistrObject.java
+END
+JsonAdvisorySuperadditionObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonAdvisorySuperadditionObject.java
+END
+JsonRoleGetListObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonRoleGetListObject.java
+END
+JsonFarmingRecordObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonFarmingRecordObject.java
+END
+AlarmIgnoreBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/AlarmIgnoreBean.java
+END
+JsonAdvisoryProposalObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonAdvisoryProposalObject.java
+END
+JsonUserCancellActivatObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/jparser/JsonUserCancellActivatObject.java
+END

@@ -1,0 +1,71 @@
+10
+
+dir
+153
+https://svn.yunyangdata.com:8801/svn/G3MobileAPP/src/trunk/G3MobileAPP/p2plibrary/src/main
+https://svn.yunyangdata.com:8801/svn/G3MobileAPP
+
+
+
+2017-09-22T07:38:02.507361Z
+81
+zhouzuowei
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a511e8d0-1933-8b45-ae04-62ee4f2582e6
+
+AndroidManifest.xml
+file
+
+
+
+
+2017-10-10T03:35:45.000000Z
+6c828cd98b850d6792e88a9c23449fe4
+2017-09-16T05:49:59.834975Z
+14
+zhouzuowei
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2249
+
+java
+dir
+
+jniLibs
+dir
+
+res
+dir
+

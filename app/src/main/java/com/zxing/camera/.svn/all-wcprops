@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/G3MobileAPP/!svn/ver/63/src/trunk/G3MobileAPP/app/src/main/java/com/zxing/camera
+END
+AutoFocusCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/G3MobileAPP/!svn/ver/63/src/trunk/G3MobileAPP/app/src/main/java/com/zxing/camera/AutoFocusCallback.java
+END
+PreviewCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/G3MobileAPP/!svn/ver/63/src/trunk/G3MobileAPP/app/src/main/java/com/zxing/camera/PreviewCallback.java
+END
+CameraConfigurationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/63/src/trunk/G3MobileAPP/app/src/main/java/com/zxing/camera/CameraConfigurationManager.java
+END
+CameraManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/G3MobileAPP/!svn/ver/63/src/trunk/G3MobileAPP/app/src/main/java/com/zxing/camera/CameraManager.java
+END
+PlanarYUVLuminanceSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/63/src/trunk/G3MobileAPP/app/src/main/java/com/zxing/camera/PlanarYUVLuminanceSource.java
+END

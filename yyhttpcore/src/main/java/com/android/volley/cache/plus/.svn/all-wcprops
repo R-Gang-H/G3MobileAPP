@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/cache/plus
+END
+ImageLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/cache/plus/ImageLoader.java
+END
+SimpleImageLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/cache/plus/SimpleImageLoader.java
+END
+ImageCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/cache/plus/ImageCache.java
+END
+BitmapImageCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/cache/plus/BitmapImageCache.java
+END
+ImageRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/android/volley/cache/plus/ImageRequest.java
+END

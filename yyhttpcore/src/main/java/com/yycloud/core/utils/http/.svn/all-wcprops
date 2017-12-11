@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http
+END
+BinaryHttpResponseHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/BinaryHttpResponseHandler.java
+END
+AsyncHttpClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/AsyncHttpClient.java
+END
+SimpleMultipartEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/SimpleMultipartEntity.java
+END
+AsyncHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/AsyncHttpRequest.java
+END
+JsonHttpResponseHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/JsonHttpResponseHandler.java
+END
+PersistentCookieStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/PersistentCookieStore.java
+END
+AsyncHttpResponseHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/AsyncHttpResponseHandler.java
+END
+FileHttpResponseHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/FileHttpResponseHandler.java
+END
+RequestParams.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/RequestParams.java
+END
+SerializableCookie.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/SerializableCookie.java
+END
+RetryHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/utils/http/RetryHandler.java
+END

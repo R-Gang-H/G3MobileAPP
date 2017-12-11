@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache
+END
+DiskLruCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/DiskLruCache.java
+END
+GlobalConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/GlobalConst.java
+END
+TALogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/TALogger.java
+END
+TAPrintToLogCatLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/TAPrintToLogCatLogger.java
+END
+CheckIDFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/CheckIDFormat.java
+END
+Arrays.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/Arrays.java
+END
+ILogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/ILogger.java
+END
+MobileFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/MobileFormat.java
+END
+ImageCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/ImageCache.java
+END
+TAStringUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/TAStringUtils.java
+END
+LruCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/LruCache.java
+END
+AndroidVersionCheckUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/AndroidVersionCheckUtils.java
+END
+LoggerConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/LoggerConfig.java
+END
+Queue.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/cache/Queue.java
+END

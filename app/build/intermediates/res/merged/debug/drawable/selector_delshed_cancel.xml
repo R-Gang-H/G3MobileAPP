@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 右下角圆角矩形绿色图片-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#25C730" />
+            <corners android:bottomRightRadius="10dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:bottomRightRadius="10dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 接收消息或发送消息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 提问信息 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size_3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- 提问信息类型 -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="right|top"
+                    android:text="提问信息:"
+                    android:textColor="@color/sienna"
+                    android:textSize="@dimen/text_size_14" />
+
+                <!-- 信息内容 -->
+
+                <TextView
+                    android:id="@+id/tv_content_msg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="请求网关上的温湿度传感器如何删除请求网关上的温湿度传感器如何删除"
+                    android:textColor="@color/sienna"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size_3"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- 接收信息类型 -->
+
+                <TextView
+                    android:id="@+id/tv_rece_msg_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/sienna"
+                    android:textSize="@dimen/text_size_14" />
+                <!-- 信息时间 -->
+
+                <TextView
+                    android:id="@+id/tv_sendtime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|right"
+                    android:text="2017-03-01 09:18:47"
+                    android:textColor="@color/sienna"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 回复消息 -->
+
+        <LinearLayout
+            android:id="@+id/ll_reply_message"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size_3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- 信息类型 -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="right|top"
+                    android:text="回复信息:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14" />
+
+                <!-- 信息内容 -->
+
+                <TextView
+                    android:id="@+id/tv_content_reply"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="您好，经过查证，您这个设备已经使用在其他的网关上......"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size_3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- 信息时间 -->
+
+                <TextView
+                    android:id="@+id/tv_replytime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="2017-03-01 09:18:47"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkmagenta" />
+
+</LinearLayout>

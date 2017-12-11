@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_back_title" />
+
+    <com.app.itserv.views.PagerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 新增种植计划标题 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_add_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="新增种植计划"
+                    android:textColor="@color/white" />
+
+                <!-- 复制 -->
+
+                <Button
+                    android:id="@+id/btn_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/contact_icon_wh"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:background="@color/green"
+                    android:padding="6dp"
+                    android:text="@string/btn_copy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/historyscore_tb"
+                android:orientation="vertical">
+
+                <!-- 所属基地 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_organization"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="所属基地: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <Spinner
+                            android:id="@+id/farplanadd_base_bel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                            android:gravity="center_vertical"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:text="▼"
+                            android:textColor="@color/black" />
+
+                    </FrameLayout>
+                </LinearLayout>
+                <!-- 所属大棚 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_role"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="所属大棚: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <Spinner
+                            android:id="@+id/farplanadd_et_greenhouse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                            android:gravity="center_vertical"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:text="▼"
+                            android:textColor="@color/black" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 计划名称 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="计划名称:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/farplanadd_et_plan_name"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 计划茬口编码 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="计划茬口编码:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/farplanadd_et_plan_crop_code"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 种植作物 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="种植作物:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/farplanadd_et_planting_crops"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 种植面积 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="种植面积(平米):"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/farplanadd_et_planting_area"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 计划种植时间 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_plan_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="计划种植时间: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/farplanadd_et_start_plan_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/contact_icon_wh"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/rs_bottom_line"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/farplanadd_et_stop_plan_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/contact_icon_wh"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/rs_bottom_line"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 预计收获时间 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_predict"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="预计收获时间: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/farplanadd_et_start_harvest_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/contact_icon_wh"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/rs_bottom_line"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/farplanadd_et_stop_harvest_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/contact_icon_wh"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/rs_bottom_line"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 预计产量 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="预计产量(公斤):"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/farplanadd_et_predict_yield"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 计划内容 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_remarks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:gravity="center_vertical|right"
+                        android:text="计划内容:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/farplanadd_et_remarks"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="2"
+                        android:background="@drawable/shape_green_rec"
+                        android:ems="8"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 负责人 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="负责人:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <Spinner
+                            android:id="@+id/farplanadd_et_person_charge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                            android:gravity="center_vertical"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:text="▼"
+                            android:textColor="@color/black" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 执行阶段 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="执行阶段:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <Spinner
+                            android:id="@+id/farplanadd_et_execu_phase"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                            android:gravity="center_vertical"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:text="▼"
+                            android:textColor="@color/black" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/historyscore_tb"
+                    android:background="@color/shallowblue" />
+
+                <!-- 实际种植时间 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_reality_plan_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="实际种植时间: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/farplanadd_reality_start_plan_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/contact_icon_wh"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/rs_bottom_line"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:text="2016-12-01"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/farplanadd_reality_stop_plan_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/contact_icon_wh"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/rs_bottom_line"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:text="2017-02-28"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 实际收获时间 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_reality_predict"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="实际收获时间: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/farplanadd_reality_start_harvest_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/contact_icon_wh"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/rs_bottom_line"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:text="2016-12-01"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/farplanadd_reality_stop_harvest_time"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/contact_icon_wh"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/rs_bottom_line"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:text="2017-02-28"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 实际产量 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_reality_yield"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="实际产量(公斤):"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/farplanadd_reality_predict_yield"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:text="30000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ll_reality_view"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/historyscore_tb"
+                android:background="@color/shallowblue"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- 保存按钮 -->
+
+                <Button
+                    android:id="@+id/farplanadd_btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/contact_icon_wh"
+                    android:background="@drawable/change_bg"
+                    android:padding="6dp"
+                    android:text="@string/btn_save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+
+                <!-- 重置按钮 -->
+
+                <Button
+                    android:id="@+id/farplanadd_changepsw_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/contact_icon_wh"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/change_bg"
+                    android:padding="6dp"
+                    android:text="@string/reset"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"></ListView>
+        </LinearLayout>
+    </com.app.itserv.views.PagerScrollView>
+
+</LinearLayout>

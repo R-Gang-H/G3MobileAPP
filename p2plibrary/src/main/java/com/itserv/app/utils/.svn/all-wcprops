@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/com/itserv/app/utils
+END
+StringUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/com/itserv/app/utils/StringUtils.java
+END
+MD5.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/com/itserv/app/utils/MD5.java
+END
+PreferenceNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/com/itserv/app/utils/PreferenceNode.java
+END
+ResourceIntent.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/com/itserv/app/utils/ResourceIntent.java
+END
+AppEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/com/itserv/app/utils/AppEvent.java
+END
+DialogUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/com/itserv/app/utils/DialogUtils.java
+END
+PreferenceSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/com/itserv/app/utils/PreferenceSet.java
+END

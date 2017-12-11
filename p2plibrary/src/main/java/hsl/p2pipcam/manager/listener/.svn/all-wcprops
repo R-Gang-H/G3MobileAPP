@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/listener
+END
+DeviceStatusListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/listener/DeviceStatusListener.java
+END
+PlayListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/listener/PlayListener.java
+END
+RecorderListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/listener/RecorderListener.java
+END

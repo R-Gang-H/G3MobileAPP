@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_back_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 我的农事记录标题 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/far_record_lay_title"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="农事记录"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/historyscore_tb"
+            android:orientation="vertical">
+
+            <!-- 所属大棚 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="所属大棚: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <Spinner
+                        android:id="@+id/far_record_lay_greenhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                        android:gravity="center_vertical"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="▼"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+            <!-- 任务名称 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="任务名称:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <Spinner
+                        android:id="@+id/far_record_lay_task_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                        android:gravity="center_vertical"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="▼"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- 农事分类 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="农事分类:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <Spinner
+                        android:id="@+id/far_record_lay_far_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                        android:gravity="center_vertical"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="▼"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+            </LinearLayout>
+            <!-- 记录人 -->
+
+            <LinearLayout
+                android:id="@+id/far_recor_recorder_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="记录人:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <Spinner
+                        android:id="@+id/far_recor_recorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                        android:gravity="center_vertical"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="▼"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+            </LinearLayout>
+            <!-- 记录时间 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="记录时间: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/far_record_lay_start_distri_time"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/far_record_lay_stop_distri_time"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/shallowblue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 确定绑定 -->
+
+            <Button
+                android:id="@+id/far_record_lay_btn_select"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/contact_icon_wh"
+                android:background="@drawable/change_bg"
+                android:padding="6dp"
+                android:text="@string/btn_select"
+                android:textColor="@drawable/login_selector_text"
+                android:textSize="@dimen/text_size_12" />
+
+            <!-- 重置按钮 -->
+
+            <Button
+                android:id="@+id/far_record_lay_changepsw_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/contact_icon_wh"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/change_bg"
+                android:padding="6dp"
+                android:text="@string/reset"
+                android:textColor="@drawable/login_selector_text"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <com.app.itserv.views.LoadingFrameView
+            android:id="@+id/load_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/far_record_lay_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none" />
+        </com.app.itserv.views.LoadingFrameView>
+        <!-- <include layout="@layout/far_record_items" /> -->
+    </LinearLayout>
+
+</LinearLayout>

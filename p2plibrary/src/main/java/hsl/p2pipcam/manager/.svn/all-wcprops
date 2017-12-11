@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/G3MobileAPP/!svn/ver/81/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager
+END
+MountDevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/MountDevice.java
+END
+DeviceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/DeviceManager.java
+END
+Device.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/G3MobileAPP/!svn/ver/81/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/Device.java
+END
+DeviceSDK.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/DeviceSDK.java
+END
+WvrDeviceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/WvrDeviceManager.java
+END
+WvrDeviceSDK.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/p2plibrary/src/main/java/hsl/p2pipcam/manager/WvrDeviceSDK.java
+END

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_size_6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size_3"
+                android:orientation="horizontal">
+
+                <!-- 大棚名称 -->
+
+                <TextView
+                    android:id="@+id/tv_ghouse_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="1号大棚"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+                <!-- 计划名称 -->
+
+                <TextView
+                    android:id="@+id/tv_plan_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="1号棚2016年4季度种植计划"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size_3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- 种植作物 -->
+
+                <TextView
+                    android:id="@+id/tv_crop_category_define"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="西红柿"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+                <!-- 种植时间 -->
+
+                <TextView
+                    android:id="@+id/tv_plan_plantdate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="16-12-01~17-02-28"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkmagenta" />
+
+</LinearLayout>

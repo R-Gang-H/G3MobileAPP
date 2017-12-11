@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <!-- 四类字体大小 -->
+    <dimen name="micro_text_size">12sp</dimen>
+    <dimen name="small_text_size">9sp</dimen>
+    <dimen name="small_middle_text_size">16sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="large_text_size">22sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="historyscore_tb">10dp</dimen>
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_6">6sp</dimen>
+    <dimen name="text_size_4">4sp</dimen>
+    <dimen name="text_size_3">3sp</dimen>
+    <dimen name="text_size_2">2sp</dimen>
+
+    <!-- 3代码 -->
+    <dimen name="img_title">80sp</dimen>
+    <dimen name="img_pager">160sp</dimen>
+    <dimen name="img_radio_left">6sp</dimen>
+    <dimen name="nub_icon_w">15sp</dimen>
+    <dimen name="nub_icon_h">15sp</dimen>
+    <dimen name="vi_line_h">1sp</dimen>
+    <dimen name="vi_line_w">1sp</dimen>
+    <dimen name="list_home_items_w">40sp</dimen>
+    <dimen name="list_home_items_h">40sp</dimen>
+    <dimen name="rl_banner_h">140dp</dimen>
+    <dimen name="rl_contact_t">40sp</dimen>
+    <dimen name="edit_text_w">80sp</dimen>
+    <dimen name="contact_icon_wh">30sp</dimen>
+    <dimen name="contact_icon_w">60sp</dimen>
+    <dimen name="btn_click_w">80sp</dimen>
+    <dimen name="tv_yyen_size">30sp</dimen>
+    <dimen name="ed_username_w">50dp</dimen>
+    <dimen name="bt_login_w">120sp</dimen>
+    <dimen name="bt_login_h">40sp</dimen>
+    <dimen name="bt_register_h">30sp</dimen>
+    <dimen name="btn_sort_h">20sp</dimen>
+    <dimen name="user_psd_h">100dp</dimen>
+    <dimen name="chang_psd_h">120sp</dimen>
+    <dimen name="user_psd_top_margin">36sp</dimen>
+    <dimen name="tv_w_login">26sp</dimen>
+    <dimen name="title_padding_left">26sp</dimen>
+
+</resources>

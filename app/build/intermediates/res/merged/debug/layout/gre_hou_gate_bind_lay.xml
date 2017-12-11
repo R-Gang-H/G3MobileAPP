@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.itserv.activity.GreenHouseGateBindActivity">
+
+    <include layout="@layout/activity_back_title" />
+
+    <!-- 大棚绑定网关标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="大棚绑定网关"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_size_8"
+        android:text="操作说明:输入网关编号,系统将进行合法性判断。没用绑定到别的大棚的网关可以成功绑定。"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_12" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/shallowblue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dip"
+        android:layout_margin="@dimen/text_size_8"
+        android:text="与大棚绑定的设备在系统中才可以进行查看和监控"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_12" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/shallowblue" />
+    <!-- 网关SN号 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_size_6"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="网关SN号:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_sgate_code"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/contact_icon_wh"
+                android:layout_weight="2"
+                android:background="@null"
+                android:drawableBottom="@drawable/rs_bottom_line"
+                android:gravity="center_vertical"
+                android:hint="YBF002080000001001"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/bt_valedate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/contact_icon_wh"
+                android:layout_weight="1"
+                android:background="@color/skyblue"
+                android:gravity="center"
+                android:inputType="none"
+                android:text="校验"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/zxing"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/main_07" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/shallowblue" />
+
+    <TextView
+        android:id="@+id/tv_sn_unlawful"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_size_6"
+        android:gravity="center"
+        android:text="校验失败:SN号非法"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <!--
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_size_6"
+        android:gravity="center"
+        android:text="校验失败:SN号合法,但是已经被绑定(XXX客户-XXX基地-XXX大棚)"
+        android:textColor="@color/red" />
+    -->
+
+    <TextView
+        android:id="@+id/tv_lawful"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_size_6"
+        android:gravity="center"
+        android:text="校验成功:SN合法"
+        android:textColor="@color/green"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/shallowblue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_size_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="如果您是二代系统客户，可以点击右侧按钮进行数据迁移（系统列出未绑定的网关供选择）。如果没有选择项，请手动输入网关SN号码。"
+            android:textColor="@color/mediumblue"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_datamigra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/skyblue"
+                android:gravity="center"
+                android:inputType="none"
+                android:padding="@dimen/text_size_6"
+                android:text="二代数据迁移"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkmagenta" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 确定绑定 -->
+
+        <Button
+            android:id="@+id/btn_comfirm_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/contact_icon_wh"
+            android:background="@drawable/change_bg"
+            android:padding="6dp"
+            android:text="@string/btn_comfirm_bind"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <!-- 重置按钮 -->
+
+        <Button
+            android:id="@+id/btn_gate_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/contact_icon_wh"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/change_bg"
+            android:padding="6dp"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

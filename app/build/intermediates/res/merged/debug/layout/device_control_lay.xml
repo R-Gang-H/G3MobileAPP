@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_back_title" />
+    <!-- 大棚详情标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#50960a">
+
+        <TextView
+            android:id="@+id/tv_mosmart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="实时监控"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/alarm_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#50960a"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@drawable/login_selector_text"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rd_device_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_data_monitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:checked="true"
+            android:text="数据监控" />
+
+        <RadioButton
+            android:id="@+id/rd_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="设备控制" />
+    </RadioGroup>
+
+    <!-- 数据监控 start -->
+    <com.app.itserv.views.LoadingFrameView
+        android:id="@+id/ld_data_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/lv_data_sensor_monitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </com.app.itserv.views.LoadingFrameView>
+
+
+    <com.app.itserv.views.LoadingFrameView
+        android:id="@+id/ld_device_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.app.itserv.views.PagerScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 设备控制start -->
+                <LinearLayout
+                    android:id="@+id/ll_cameras_device_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_erelay_device_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_erelay_switch_device_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_erelay2_device_control"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_erealy_box_device_control"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+            </LinearLayout>
+
+        </com.app.itserv.views.PagerScrollView>
+    </com.app.itserv.views.LoadingFrameView>
+</LinearLayout>

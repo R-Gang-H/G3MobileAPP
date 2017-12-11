@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_normal"
+    android:orientation="vertical"
+    tools:context="com.app.itserv.activity.GreenHouseGateUnbindActivity">
+
+    <include layout="@layout/activity_back_title" />
+
+    <!-- 大棚分配员工标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="大棚分配员工"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_size_8"
+        android:text="操作说明:员工被分配到大棚后才可以对该大棚进行查看和操作。"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_12" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/shallowblue" />
+    <!-- 网关SN号 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/text_size_6"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_size_4"
+            android:gravity="top"
+            android:text="员工列表:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <com.app.itserv.views.PullToRefreshListView
+            android:id="@+id/gre_hou_distr_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:scrollbars="none"></com.app.itserv.views.PullToRefreshListView>
+
+        <!-- <include layout="@layout/gre_hou_distri_items" /> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 确定绑定 -->
+
+        <Button
+            android:id="@+id/btn_save"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/contact_icon_wh"
+            android:background="@drawable/change_bg"
+            android:padding="6dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <!-- 重置按钮 -->
+
+        <Button
+            android:id="@+id/btn_reset"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/contact_icon_wh"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/change_bg"
+            android:padding="6dp"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

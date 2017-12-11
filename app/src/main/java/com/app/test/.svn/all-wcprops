@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/G3MobileAPP/!svn/ver/117/src/trunk/G3MobileAPP/app/src/main/java/com/app/test
+END
+ExcutorPoolUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/ExcutorPoolUtil.java
+END
+MobileCommonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/MobileCommonUtil.java
+END
+VolleyUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/VolleyUtil.java
+END
+GsonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/GsonUtil.java
+END
+HandlerUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/HandlerUtil.java
+END
+DialogUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/DialogUtil.java
+END
+HttpUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/HttpUtil.java
+END
+JsonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/JsonUtil.java
+END
+MapCacheUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/MapCacheUtil.java
+END
+CameraUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/CameraUtil.java
+END
+MediaPlayerUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/MediaPlayerUtil.java
+END
+AsycHttpUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/AsycHttpUtil.java
+END
+ListCacheUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/ListCacheUtil.java
+END
+UnitUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/UnitUtil.java
+END
+ZxingUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/ZxingUtil.java
+END
+ColorUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/ColorUtil.java
+END
+AsynctaskUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/AsynctaskUtil.java
+END
+SdCardUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/SdCardUtil.java
+END
+DateLocalUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/DateLocalUtil.java
+END
+VideoRecorderUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/VideoRecorderUtil.java
+END
+DataCacheUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/DataCacheUtil.java
+END
+RecycleViewUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/RecycleViewUtil.java
+END
+AudioRecorderUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/AudioRecorderUtil.java
+END
+BitmapCacheUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/G3MobileAPP/!svn/ver/117/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/BitmapCacheUtil.java
+END
+BaiDuLocationUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/BaiDuLocationUtil.java
+END
+DiskLruCacheUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/DiskLruCacheUtil.java
+END
+BitMapUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/test/BitMapUtil.java
+END

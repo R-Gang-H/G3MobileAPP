@@ -1,0 +1,192 @@
+package com.app.itserv.activity;
+
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.TextView;
+
+import com.alibaba.sdk.android.oss.ClientException;
+import com.alibaba.sdk.android.oss.ServiceException;
+import com.alibaba.sdk.android.oss.model.PutObjectRequest;
+import com.alibaba.sdk.android.oss.model.PutObjectResult;
+import com.alicloud.oss.callback.ProgressCallback;
+import com.alicloud.oss.model.Paramet;
+import com.alicloud.oss.token.Initialicloud;
+import com.alicloud.oss.token.StsToken;
+import com.app.itserv.BaseActivity;
+import com.itserv.app.http.MyProgressDialog;
+import com.itserv.app.util.ImageUtils;
+import com.itserv.app.util.LogUtils;
+import com.itserv.app.util.PreferencesUtils;
+import com.itserv.app.util.ToastUtils;
+import com.itserv.shed.R;
+import com.zxy.tiny.callback.FileCallback;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Map;
+
+import butterknife.BindView;
+import butterknife.OnClick;
+
+import static com.oneapm.agent.android.OneApmAgent.log;
+
+/**
+ * 作者： 周作威 on 2017/9/26 13:53.
+ * 类描述：相机，图片上传
+ */
+public class CameraActivity extends BaseActivity {
+    public final static String ISUPDATE = "ISUPDATE";//是否上传
+    public final static String Proportionx = "Proportionx";//比例X
+    public final static String Proportiony = "Proportiony";//比例Y
+    public final static int ACTIVITY_RESULT = 200;//返回到activity
+    int aspectX;
+    int aspectY;
+    @BindView(R.id.tv_camera)
+    TextView tvCamera;
+    @BindView(R.id.tv_album)
+    TextView tvAlbum;
+    private boolean isupdate;
+    private MyProgressDialog dialog;
+
+    @Override
+    protected int layoutViewId() {
+        return R.layout.activity_camera;
+    }
+
+    @Override
+    protected void init() {
+        super.init();
+        Window window = getWindow();
+        WindowManager.LayoutParams params = window.getAttributes();
+        params.width = WindowManager.LayoutParams.MATCH_PARENT;
+        params.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        params.gravity = Gravity.BOTTOM;
+        if (getIntent().getExtras() != null) {
+            isupdate = getIntent().getExtras().getBoolean(ISUPDATE);
+            aspectX = getIntent().getExtras().getInt(Proportionx, 0);
+            aspectY = getIntent().getExtras().getInt(Proportiony, 0);
+        }
+        dialog = new MyProgressDialog(this, true);
+        StsToken.getInstance();
+    }
+
+    @OnClick({R.id.tv_camera, R.id.tv_album})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.tv_camera:
+                dialog.show();
+                ImageUtils.openCameraImage(this, "img.jpg");
+                break;
+            case R.id.tv_album:
+                dialog.show();
+                ImageUtils.openLocalImage(this);
+                break;
+            case R.id.tv_close:
+                finish();
+                break;
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (dialog != null && dialog.isShowing())
+            dialog.dismiss();
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode != RESULT_OK) {
+            dialog.dismiss();
+            finish();
+            return;
+        }
+        if (requestCode == ImageUtils.GET_IMAGE_BY_CAMERA) {//相机
+            ImageUtils.startPhotoZoom(this, ImageUtils.imageUri, aspectX, aspectY, false);
+        } else if (requestCode == ImageUtils.GET_IMAGE_FROM_PHONE) {//相册
+            ImageUtils.startPhotoZoom(this, data.getData(), aspectX, aspectY, false);
+        } else if (requestCode == ImageUtils.CROP_IMAGE) {//裁剪
+            LogUtils.e("onActivityResult", ImageUtils.getImgPath("cut").getAbsolutePath());
+            ImageUtils.compressBitmap(ImageUtils.getImgPath("cut").getAbsolutePath(), ImageUtils.getImgPath("img_" + System.currentTimeMillis()).getAbsolutePath(), Bitmap.Config.RGB_565, new FileCallback() {
+                @Override
+                public void callback(boolean isSuccess, String outfile) {
+                    if (!isSuccess) {
+                        dialog.dismiss();
+                        ToastUtils.makeTextShort("图片上传失败, 请重新提交~！");
+                        return;
+                    }
+                    LogUtils.e("callback", outfile);
+                    if (isupdate)
+                        update(outfile);
+                    else {
+                        dialog.dismiss();
+                        setResult(outfile);
+                    }
+                }
+            });
+        }
+    }
+
+    //图片上传
+    public void update(String outfile) {
+        // 生成文件名
+        String id = PreferencesUtils.getString(CameraActivity.this, "id");
+        String filename = id + "_" + System.currentTimeMillis() + ".jpg";
+        // 生成文件名
+//        SimpleDateFormat t = new SimpleDateFormat("yyyyMMddssSSS");
+//        String strRand = String.valueOf((int) (Math.random() * 5));
+//        filename = "Far" + (t.format(new Date())) + strRand + ".jpg";
+        Paramet.uploadObject = "farming/" + Initialicloud.getInstance().getDate() + "/" + filename;//目录结构
+        Paramet.uploadFilePath = outfile;
+        Initialicloud.getInstance().initSamples();
+        if (null == Initialicloud.getInstance().putObjectSamples) {
+            dialog.dismiss();
+            ToastUtils.makeTextShort("图片上传失败, 请重新提交~！");
+            return;
+        }
+        Initialicloud.getInstance().putObjectSamples.asyncPutObjectFromLocalFile(new ProgressCallback<PutObjectRequest, PutObjectResult>() {
+            @Override
+            public void onProgress(PutObjectRequest request, long currentSize, long totalSize) {
+                LogUtils.e("onProgress", "---request:----" + request + ",---currentSize:---" + currentSize + "---totalSize:----------" + totalSize + "------");
+            }
+
+            @Override
+            public void onSuccess(PutObjectRequest request, PutObjectResult result) {
+                dialog.dismiss();
+                String body = result.getServerCallbackReturnBody();
+                int StatusCode = result.getStatusCode();
+                String Etag = result.getETag();
+                Map<String, String> responseHeader = result.getResponseHeader();
+                String id = result.getRequestId();
+                final String imgname = request.getObjectKey();
+                LogUtils.e("onSuccess", "--------->request:---" + request + "--------------->result:----body：" + body + ",StatusCode：" + StatusCode + ",Etag：" + Etag + ",responseHeader" + responseHeader + ",id：" + id);
+                if (StatusCode == 200) {
+                    setResult(imgname);
+                } else
+                    ToastUtils.makeTextShort("图片上传失败, 请重新提交~！");
+            }
+
+            @Override
+            public void onFailure(PutObjectRequest request, ClientException clientException, ServiceException serviceException) {
+                LogUtils.e("onFailure", "---request:----" + request + ",---clientException:---" + clientException + "--serviceException:--" + serviceException + "-----------------");
+                dialog.dismiss();
+                ToastUtils.makeTextShort("图片上传失败, 请重新提交~！");
+            }
+        });
+    }
+
+    //返回
+    private void setResult(String outfile) {
+        Intent intent = new Intent("inline-data");
+        intent.setData(Uri.parse(outfile));
+        setResult(RESULT_OK, intent);
+        finish();
+    }
+}

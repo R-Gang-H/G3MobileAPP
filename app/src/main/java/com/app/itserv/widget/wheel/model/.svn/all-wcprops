@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/widget/wheel/model
+END
+CityModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/widget/wheel/model/CityModel.java
+END
+DistrictModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/widget/wheel/model/DistrictModel.java
+END
+ProvinceModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/widget/wheel/model/ProvinceModel.java
+END
+XmlParserHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/widget/wheel/model/XmlParserHandler.java
+END

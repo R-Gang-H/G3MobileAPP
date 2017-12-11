@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_back_title" />
+    <!-- 任务分配标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="任务分配"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.app.itserv.views.PagerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/historyscore_tb"
+                android:orientation="vertical">
+
+                <!-- 任务名称 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="任务名称:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_task_name"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 任务描述 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_remarks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right|top"
+                        android:text="任务描述:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_task_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 农事分类 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="农事分类:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_far_type"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- 分配说明 -->
+
+                    <LinearLayout
+                        android:id="@+id/ll_share_descrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/text_size_8"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="分配说明:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <EditText
+                            android:id="@+id/et_dist_explain"
+                            android:layout_width="0dp"
+                            android:layout_height="60sp"
+                            android:layout_weight="3"
+                            android:background="@drawable/shape_green_rec"
+                            android:gravity="top|left"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/historyscore_tb" />
+                    </LinearLayout>
+
+                    <!-- 执行人 -->
+
+                    <LinearLayout
+                        android:id="@+id/ll_executor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_size_6"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="执行人:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_12" />
+
+                            <Spinner
+                                android:id="@+id/sp_executor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:gravity="right"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_12" />
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/et_executor"
+                            android:layout_width="0dp"
+                            android:layout_height="60sp"
+                            android:layout_weight="3"
+                            android:background="@drawable/shape_green_rec"
+                            android:gravity="top|left"
+                            android:focusable="false"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/historyscore_tb" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_size_6"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right|top"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical|right|top"
+                            android:text="说明：一个任务可以分配给多人，分配成功后，为每人分配一条农事任务记录。"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/historyscore_tb" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/shallowblue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- 提交按钮 -->
+
+                <Button
+                    android:id="@+id/btn_submite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/contact_icon_wh"
+                    android:background="@drawable/change_bg"
+                    android:padding="6dp"
+                    android:text="@string/submite"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+
+                <!-- 重置按钮 -->
+
+                <Button
+                    android:id="@+id/btn_chan_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/contact_icon_wh"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/change_bg"
+                    android:padding="6dp"
+                    android:text="@string/reset"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.app.itserv.views.PagerScrollView>
+
+</LinearLayout>

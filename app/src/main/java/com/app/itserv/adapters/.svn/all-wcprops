@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters
+END
+ContactAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/ContactAdapter.java
+END
+DataDictionaryAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/DataDictionaryAdapter.java
+END
+TaskExecuteRecordAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/61/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/TaskExecuteRecordAdapter.java
+END
+UserManagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/109/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/UserManagerAdapter.java
+END
+GreenHouseGatMoSmartSensorAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/G3MobileAPP/!svn/ver/98/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/GreenHouseGatMoSmartSensorAdapter.java
+END
+FarTaskItemsAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/FarTaskItemsAdapter.java
+END
+GreenHouseImgAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/84/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/GreenHouseImgAdapter.java
+END
+MainFragmentAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/MainFragmentAdapter.java
+END
+TabPageIndicatorAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/TabPageIndicatorAdapter.java
+END
+FarTaskRecordAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/FarTaskRecordAdapter.java
+END
+PlanSchemeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/PlanSchemeAdapter.java
+END
+GreenHouseDistrAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/124/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/GreenHouseDistrAdapter.java
+END
+TaskNameAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/TaskNameAdapter.java
+END
+FollowAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/FollowAdapter.java
+END
+OrganizationAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/99/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/OrganizationAdapter.java
+END
+GhosueBelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/GhosueBelAdapter.java
+END
+SmartGateListViewAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/SmartGateListViewAdapter.java
+END
+FarTaskHistoryAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/FarTaskHistoryAdapter.java
+END
+BaseBelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/BaseBelAdapter.java
+END
+FarTaskAssignerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/FarTaskAssignerAdapter.java
+END
+GreenHouseEmployeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/GreenHouseEmployeAdapter.java
+END
+ShedSettingAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/ShedSettingAdapter.java
+END
+TaskDetailHistoryAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/TaskDetailHistoryAdapter.java
+END
+RoleSpinnerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/RoleSpinnerAdapter.java
+END
+RoleUserOrgAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/RoleUserOrgAdapter.java
+END
+TaskExecuteHistoryAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/TaskExecuteHistoryAdapter.java
+END
+GhosueGetMoSmartAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/88/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/GhosueGetMoSmartAdapter.java
+END
+BelongExecuteTaskNameAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/BelongExecuteTaskNameAdapter.java
+END
+UserGreenHouseAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/97/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/UserGreenHouseAdapter.java
+END
+GreenHouseGateAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/GreenHouseGateAdapter.java
+END
+OrganizaUserAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/OrganizaUserAdapter.java
+END
+AdvisoryProposalAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/149/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/AdvisoryProposalAdapter.java
+END
+BelongGreenHoustAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/BelongGreenHoustAdapter.java
+END
+gHGateAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/146/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/gHGateAdapter.java
+END
+Bee_PageAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/Bee_PageAdapter.java
+END
+BelongTaskNameAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/BelongTaskNameAdapter.java
+END
+GreenHouseManagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/99/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/GreenHouseManagerAdapter.java
+END
+MyFarmingRecordAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/101/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/MyFarmingRecordAdapter.java
+END
+DistriPersonAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/DistriPersonAdapter.java
+END
+NewsAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/NewsAdapter.java
+END
+ExamineProbAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/ExamineProbAdapter.java
+END
+RoleManagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/99/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/RoleManagerAdapter.java
+END
+MigrationDataAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/56/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/MigrationDataAdapter.java
+END
+FarTaskExecuteAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/FarTaskExecuteAdapter.java
+END
+MyTodayTaskAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/103/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/MyTodayTaskAdapter.java
+END
+gHouseGatSensorAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/146/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/gHouseGatSensorAdapter.java
+END
+LoginLogAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/101/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/LoginLogAdapter.java
+END
+BaseManagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/84/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/BaseManagerAdapter.java
+END
+SmartGateListViewGetLimitAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/SmartGateListViewGetLimitAdapter.java
+END
+FarmingRecordAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/99/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/FarmingRecordAdapter.java
+END
+BelongRecorderAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/BelongRecorderAdapter.java
+END
+PlantBelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/app/src/main/java/com/app/itserv/adapters/PlantBelAdapter.java
+END

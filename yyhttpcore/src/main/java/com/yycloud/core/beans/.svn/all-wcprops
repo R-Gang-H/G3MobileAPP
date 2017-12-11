@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/G3MobileAPP/!svn/ver/88/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans
+END
+NewBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/78/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/NewBean.java
+END
+Component_alias.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/Component_alias.java
+END
+HourData.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/HourData.java
+END
+ChartDatas.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/ChartDatas.java
+END
+MoAlarmstrategyL.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/MoAlarmstrategyL.java
+END
+SocketIobeans.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/16/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/SocketIobeans.java
+END
+Harvest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/Harvest.java
+END
+ChartData.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/ChartData.java
+END
+AlarmPlanSettingBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/AlarmPlanSettingBean.java
+END
+MoAlarmstrategyH.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/MoAlarmstrategyH.java
+END
+MoAlarmstrategyHL.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/MoAlarmstrategyHL.java
+END
+Geogroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/88/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/Geogroups.java
+END
+AlarmStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/AlarmStrategy.java
+END
+ShedInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/ShedInfo.java
+END
+ECMSAdvertisement.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/ECMSAdvertisement.java
+END
+YYContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/YYContact.java
+END
+AlarmIgnoreMSG.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/AlarmIgnoreMSG.java
+END
+ECMSColumnContentList.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/ECMSColumnContentList.java
+END
+RelayBoxSocketBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/RelayBoxSocketBean.java
+END
+ECMSColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/ECMSColumn.java
+END
+WifiCamera.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/WifiCamera.java
+END
+CameraStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/CameraStatus.java
+END
+Components.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/G3MobileAPP/!svn/ver/88/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/Components.java
+END
+Location.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/G3MobileAPP/!svn/ver/88/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/Location.java
+END
+Smartgate.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/Smartgate.java
+END
+Shed.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/Shed.java
+END
+AlarmIgnoreBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/G3MobileAPP/!svn/ver/71/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/AlarmIgnoreBean.java
+END
+ShedInfos.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/beans/ShedInfos.java
+END

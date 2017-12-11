@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_back_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 农事任务设置标题 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="农事任务设置"
+                android:textColor="@color/white" />
+
+            <!-- 新增 -->
+
+            <Button
+                android:id="@+id/btn_far_task_add"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/contact_icon_wh"
+                android:layout_marginRight="@dimen/text_size_8"
+                android:background="@color/green"
+                android:padding="6dp"
+                android:text="@string/btn_add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/historyscore_tb"
+            android:orientation="vertical">
+
+            <!-- 所属基地 -->
+
+            <LinearLayout
+                android:id="@+id/ll_organization"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="所属基地: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <Spinner
+                        android:id="@+id/sp_base_bel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                        android:gravity="center_vertical"
+                        android:popupBackground="@drawable/u4"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="▼"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+            </LinearLayout>
+            <!-- 所属大棚 -->
+
+            <LinearLayout
+                android:id="@+id/ll_role"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="所属大棚: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <Spinner
+                        android:id="@+id/sp_ghouse_bel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                        android:gravity="center_vertical"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="▼"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+            </LinearLayout>
+            <!-- 所属计划 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="所属计划:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <Spinner
+                        android:id="@+id/sp_plan_bel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                        android:gravity="center_vertical"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="▼"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+            </LinearLayout>
+            <!-- 任务名称 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="任务名称:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <EditText
+                    android:id="@+id/et_task_name"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/contact_icon_wh"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:drawableBottom="@drawable/rs_bottom_line"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+            <!-- 任务状态 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_size_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="分配状态:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <Spinner
+                        android:id="@+id/sp_task_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                        android:gravity="center_vertical"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="▼"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--&lt;!&ndash; 分配人 &ndash;&gt;-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/text_size_6"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginRight="@dimen/text_size_8"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical|right"-->
+                    <!--android:text="分配人:"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/text_size_12" />-->
+
+                <!--<FrameLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="3">-->
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/sp_distri_person"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@null"-->
+                        <!--android:dropDownVerticalOffset="@dimen/contact_icon_wh"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:spinnerMode="dropdown"-->
+                        <!--android:textColor="@color/black" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="right|center_vertical"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:text="▼"-->
+                        <!--android:textColor="@color/black" />-->
+
+                <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+
+            <!-- 分配时间 -->
+
+            <LinearLayout
+                android:id="@+id/ll_gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="开始时间: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/start_distri_time"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/stop_distri_time"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/shallowblue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 确定绑定 -->
+
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/contact_icon_wh"
+                android:background="@drawable/change_bg"
+                android:padding="6dp"
+                android:text="@string/btn_select"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+
+            <!-- 重置按钮 -->
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/contact_icon_wh"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/change_bg"
+                android:padding="6dp"
+                android:text="@string/reset"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/far_task_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"></ListView>
+
+        <!-- <include layout="@layout/far_task_setting_items" /> -->
+    </LinearLayout>
+
+</LinearLayout>

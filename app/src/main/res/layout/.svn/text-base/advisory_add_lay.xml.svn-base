@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_back_title" />
+    <!-- 问题填报标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_message_send"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="问题填报"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.app.itserv.views.PagerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/historyscore_tb"
+                android:orientation="vertical">
+
+                <!-- 问题分类 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical|right"
+                        android:text="问题分类:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <Spinner
+                            android:id="@+id/issue_class"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:dropDownVerticalOffset="@dimen/contact_icon_wh"
+                            android:gravity="center_vertical"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:text="▼"
+                            android:textColor="@color/black" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 标题 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical|right"
+                        android:text="标题:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <EditText
+                        android:id="@+id/title_name"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 详细说明 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_explain"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1.2"
+                        android:gravity="center|right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/text_size_3"
+                            android:gravity="center"
+                            android:text="详细说明:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/desc_explain"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/bt_login_h"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape_green_rec"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 附件1 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical|right"
+                        android:text="附件1:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_acces1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:enabled="false"
+                        android:gravity="center_vertical|right"
+                        android:text="选择"
+                        android:textColor="@color/mediumblue"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 附件2 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical|right"
+                        android:text="附件2:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_acces2"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:enabled="false"
+                        android:gravity="center_vertical|right"
+                        android:text="选择"
+                        android:textColor="@color/mediumblue"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 附件3 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical|right"
+                        android:text="附件3:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_acces3"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/contact_icon_wh"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/rs_bottom_line"
+                        android:enabled="false"
+                        android:gravity="center_vertical|right"
+                        android:text="选择"
+                        android:textColor="@color/mediumblue"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <!-- 上传文件格式 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text_size_8"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/upload_format"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:inputType="textMultiLine"
+                        android:text="说明：每个附件的大小不能超过1M。只能是图片或文档，不能是压缩文件或可执行文件。"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/historyscore_tb" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/shallowblue" />
+
+            <LinearLayout
+                android:id="@+id/ll_supply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- 确定发送按钮 -->
+
+                <Button
+                    android:id="@+id/btn_submite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/contact_icon_wh"
+                    android:background="@drawable/change_bg"
+                    android:padding="6dp"
+                    android:text="@string/submite"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+
+                <!-- 重置按钮 -->
+
+                <Button
+                    android:id="@+id/changepsw_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/contact_icon_wh"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/change_bg"
+                    android:padding="6dp"
+                    android:text="@string/reset"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/shallowblue" />
+        </LinearLayout>
+    </com.app.itserv.views.PagerScrollView>
+
+</LinearLayout>

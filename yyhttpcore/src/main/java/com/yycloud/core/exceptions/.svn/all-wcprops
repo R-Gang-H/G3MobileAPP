@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/exceptions
+END
+TADBFieldException.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/exceptions/TADBFieldException.java
+END
+TADBNotOpenException.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/exceptions/TADBNotOpenException.java
+END
+TAAppException.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/exceptions/TAAppException.java
+END
+TANoSuchCommandException.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/exceptions/TANoSuchCommandException.java
+END
+TANoSuchNameLayoutException.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/exceptions/TANoSuchNameLayoutException.java
+END
+FileAlreadyExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/exceptions/FileAlreadyExistException.java
+END
+TADBException.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/exceptions/TADBException.java
+END
+TAException.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/G3MobileAPP/!svn/ver/14/src/trunk/G3MobileAPP/yyhttpcore/src/main/java/com/yycloud/core/exceptions/TAException.java
+END
