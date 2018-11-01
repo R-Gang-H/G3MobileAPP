@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.neenbedankt.android-apt'
+
 android {
     signingConfigs {
         release {
@@ -9,21 +9,22 @@ android {
             storePassword 'yunyang'
         }
     }
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 25 // 把 sdk 编译版本 改为 5.0
+    buildToolsVersion '27.0.3'
+    useLibrary 'org.apache.http.legacy' // Google删除了org.apache大部分的库。。导致在6.0编译不通过
     defaultConfig {
         applicationId "com.itserv.shed"
-        minSdkVersion 14
-        targetSdkVersion 21
+        minSdkVersion 18
+        targetSdkVersion 22 // 23以下不需要动态获取权限
         versionCode 26
         versionName "3.8.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled = true
-//        ndk {
-//            //选择要添加的对应cpu类型的.so库。
-//            abiFilters 'armeabi-v7a'
-//            // 还可以添加 , 'mips', 'mips64', 'armeabi-v8a', 'x86', 'x86_64', 'armeabi'
-//        }
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi-v7a'
+            // 还可以添加 , 'mips', 'mips64', 'armeabi-v8a', 'x86', 'x86_64', 'armeabi'
+        }
     }
     buildTypes {
         release {
@@ -53,33 +54,9 @@ android {
     }
 }
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile project(':viewpagerindicator')
-    compile project(':p2plibrary')
-    compile project(':yyhttpcore')
-    compile files('libs/achartengine-1.1.0.jar')
-    compile files('libs/android-logging-log4j-1.0.3.jar')
-    compile files('libs/Android_SDK.jar')
-    compile files('libs/Android_SDK_component.jar')
-    compile files('libs/avoscloud-push-v3.12.3.jar')
-    compile files('libs/avoscloud-sdk-v3.12.3.jar')
-    compile files('libs/engine.io-client-0.8.3.jar')
-    compile files('libs/fastjson.jar')
-    compile files('libs/libammsdk.jar')
-    compile files('libs/log4j-1.2.17.jar')
-    compile files('libs/oneapm-android-agent.jar')
-    compile files('libs/open_sdk_r5043.jar')
-    compile files('libs/socket.io-client-0.8.3.jar')
-    compile files('libs/universal-image-loader-1.9.3-SNAPSHOT.jar')
-    compile files('libs/zxing.jar')
-    //注解
-    apt 'com.jakewharton:butterknife-compiler:8.0.1'
-    compile files('libs/aliyun-oss-sdk-android-2.4.3.jar')
-    compile files('libs/okhttp-3.5.0.jar')
-    compile files('libs/okio-1.11.0.jar')
-    compile files('libs/zxing-3.1.0.jar')
-    compile 'com.zxy.android:tiny:0.0.6'
-    compile 'com.jakewharton:butterknife:8.0.1'
-    compile 'com.android.support:support-v4:21.0.3'
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    testImplementation 'junit:junit:4.12'
+    implementation project(':viewpagerindicator')
+    implementation project(':p2plibrary')
+    implementation project(':yyhttpcore')
 }

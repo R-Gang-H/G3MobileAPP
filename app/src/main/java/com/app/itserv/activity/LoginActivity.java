@@ -15,7 +15,6 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.app.itserv.BaseActivity;
 import com.app.itserv.fragments.VersionUtilNew;
@@ -29,24 +28,20 @@ import com.itserv.app.config.Config;
 import com.itserv.app.http.HttpCallBack;
 import com.itserv.app.http.HttpManager;
 import com.itserv.app.http.HttpUtils;
-import com.itserv.app.util.LogUtils;
 import com.itserv.app.util.PreferencesUtils;
 import com.itserv.app.util.ToastUtils;
 import com.itserv.shed.R;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.yycloud.app.AlarmStrategyManager;
 import com.yycloud.app.utils.TAPreferenceUtil;
-import com.yycloud.app.utils.TAUtils;
 import com.yycloud.app.utils.WapiUtil;
+import com.yycloud.core.utils.http.AsyncHttpClient;
+import com.yycloud.core.utils.http.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;
 
 import java.util.List;
 
 import butterknife.BindView;
-
-import static com.oneapm.agent.android.OneApmAgent.log;
 
 /**
  * @project name：yyshed
@@ -89,15 +84,9 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
      */
     private void checkUpdate() {
         // 获取service版本号
-        AsyncHttpClient updateClient = new AsyncHttpClient(true, 80, 443);
+        AsyncHttpClient updateClient = new AsyncHttpClient();
         updateClient.get(LoginActivity.this, Config.VERSION_UPDATE_URL,
                 new AsyncHttpResponseHandler() {
-
-                    @Override
-                    public void onFailure(int arg0, Header[] arg1, byte[] arg2,
-                                          Throwable arg3) {
-                        super.onFailure(arg0, arg1, arg2, arg3);
-                    }
 
                     @Override
                     @Deprecated

@@ -1,16 +1,14 @@
 package com.app.itserv.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.app.itserv.*;
+import com.app.itserv.BaseActivity;
 import com.app.itserv.fragments.VersionUtilNew;
 import com.google.gson.Gson;
 import com.itserv.app.bean.Version;
@@ -18,9 +16,8 @@ import com.itserv.app.config.Config;
 import com.itserv.app.util.QuitDialogUtil;
 import com.itserv.app.util.ToastUtils;
 import com.itserv.shed.R;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.yycloud.app.utils.TAUtils;
+import com.yycloud.core.utils.http.AsyncHttpClient;
+import com.yycloud.core.utils.http.AsyncHttpResponseHandler;
 
 import org.apache.http.Header;
 
@@ -107,17 +104,9 @@ public class SettingUserActivity extends BaseActivity implements OnClickListener
      */
     private void checkUpdate() {
         // 获取service版本号
-        AsyncHttpClient updateClient = new AsyncHttpClient(true, 80, 443);
+        AsyncHttpClient updateClient = new AsyncHttpClient();
         updateClient.get(mContext, Config.VERSION_UPDATE_URL,
                 new AsyncHttpResponseHandler() {
-
-                    @Override
-                    public void onFailure(int arg0, Header[] arg1, byte[] arg2,
-                                          Throwable arg3) {
-                        TAUtils.toastMessage((Activity) mContext,
-                                "失败：" + arg3.getMessage());
-                        super.onFailure(arg0, arg1, arg2, arg3);
-                    }
 
                     @Override
                     @Deprecated

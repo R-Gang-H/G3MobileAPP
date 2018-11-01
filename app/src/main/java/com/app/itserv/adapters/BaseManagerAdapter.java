@@ -1,8 +1,5 @@
 package com.app.itserv.adapters;
 
-import java.io.Serializable;
-import java.util.List;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -28,9 +25,9 @@ import com.itserv.app.util.PreferencesUtils;
 import com.itserv.app.util.ToastUtils;
 import com.itserv.shed.R;
 import com.yycloud.app.utils.DateLocalUtil;
-import com.yycloud.app.utils.MYCallBack;
-import com.yycloud.app.utils.TAUtils;
-import com.yycloud.app.utils.WapiUtilEx;
+
+import java.io.Serializable;
+import java.util.List;
 
 import de.greenrobot.event.EventBus;
 
@@ -61,7 +58,7 @@ public class BaseManagerAdapter extends BaseAdapter {
 
     // private String loginBase = "山东寿光联通合作示范基地";
 
-	/* 弹出dialog框end */
+    /* 弹出dialog框end */
 
     public BaseManagerAdapter(
             Context mContext,

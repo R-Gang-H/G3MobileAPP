@@ -108,7 +108,7 @@ public class CameraActivity extends BaseActivity {
             LogUtils.e("onActivityResult", ImageUtils.getImgPath("cut").getAbsolutePath());
             ImageUtils.compressBitmap(ImageUtils.getImgPath("cut").getAbsolutePath(), ImageUtils.getImgPath("img_" + System.currentTimeMillis()).getAbsolutePath(), Bitmap.Config.RGB_565, new FileCallback() {
                 @Override
-                public void callback(boolean isSuccess, String outfile) {
+                public void callback(boolean isSuccess, String outfile, Throwable t) {
                     if (!isSuccess) {
                         dialog.dismiss();
                         ToastUtils.makeTextShort("图片上传失败, 请重新提交~！");

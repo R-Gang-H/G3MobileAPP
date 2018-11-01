@@ -1,10 +1,8 @@
 package com.app.itserv.fragments;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,36 +11,24 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.app.itserv.activity.AboutActivity;
 import com.app.itserv.activity.AlarmNumberActivity;
 import com.app.itserv.activity.BaseManagerActivity;
 import com.app.itserv.activity.ConverSationsActivity;
 import com.app.itserv.activity.EquipmentManagerActivity;
 import com.app.itserv.activity.FarmingManageActivity;
-import com.app.itserv.activity.FarmingRecordActivity;
 import com.app.itserv.activity.FarmingTaskActivity;
 import com.app.itserv.activity.FeedbackActivity;
 import com.app.itserv.activity.GetLimitActivity;
 import com.app.itserv.activity.GreenHouseManagerActivity;
 import com.app.itserv.activity.MerchantInfoActivity;
 import com.app.itserv.activity.MyFarmingRecordActivity;
-import com.app.itserv.activity.ProtocolActivity;
 import com.app.itserv.activity.ServerUrlActivity;
 import com.app.itserv.activity.SettingUserActivity;
 import com.app.itserv.activity.ShareActivity;
 import com.app.itserv.activity.UserManagerActivity;
-import com.google.gson.Gson;
-import com.itserv.app.bean.Version;
-import com.itserv.app.config.Config;
 import com.itserv.app.util.PreferencesUtils;
 import com.itserv.app.util.QuitDialogUtil;
-import com.itserv.app.util.ToastUtils;
 import com.itserv.shed.R;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.yycloud.app.utils.TAUtils;
-
-import org.apache.http.Header;
 
 /**
  * 我的
